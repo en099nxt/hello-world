@@ -1,2 +1,1 @@
-# hello-world
-to test
+alert();
