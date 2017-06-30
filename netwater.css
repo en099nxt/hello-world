@@ -1,0 +1,73 @@
+
+/* 基本資料的超連結顏色 */
+a{
+	color:#2977d2;
+}
+
+/* 訂購按鈕、手機版齒輪工具列按鈕、手機版齒輪工具列之查訂單輸入框與按鈕、會員工具列輸入框與按鈕的樣式 */
+.buy,
+#tool_box input,
+#chk_order_div input,
+#mem_box input{
+	background-color:#e8f5ff;
+	margin:0px 0px 0px 0px;
+	border:solid 1px #87b7dc;			/* 寬度改成零才設下面的陰影(考慮 #bbd4e6) */
+	/* box-shadow:0 0 8px 0 rgba(135,183,220,0.9);	上面改成零才設這個的陰影 */
+	border-radius:4px;
+	font-size:20px;
+	padding:7px;
+	text-shadow:1px 1px #fff;
+	font-family:新細明體;
+}
+
+/* 商品分類選單的樣式 (包括左邊、上面、左邊跳出細分類選單) */
+.pc1_cl, .pc1_nr, .pc2_box,
+.pc2b_cl, .pc2b_nr,
+.pc2_cl, .pc2_nr{
+	font-family:新細明體;
+	font-size:12pt;
+}
+
+/* 商品分類名稱上數量樣式 */
+.p_ct{
+	white-space:nowrap;
+}
+
+/* 商品主分類文字樣式 */
+.cls_name{
+	color:#2f8cde;
+	font-weight:bold;
+	text-shadow:1px 1px #fff;
+}
+.cls_name:hover{
+	color:#090;
+}
+
+/* 商品子分類前標文字、縮排、清除底線 (原本就是 ▶ indent:-13px bottom:4px，有改成 ► indent:-20px padding:0px 0px 5px 41px 但手機縮排太多算了) */
+.pc2_nr::before{
+	content:'▸ ';
+	color:#2f8cde;
+}
+.pc2_cl::before{
+	content:'▹ ';
+}
+.pc2_nr,
+.pc2_cl{
+	text-indent:-13px;
+	padding-bottom:4px;
+	text-decoration:none;
+	text-shadow:1px 1px #fff;
+}
+
+/* 加入我的最愛按鈕 (後來決定讓它跟地圖一樣灰色)
+.btnOut{
+	background-color:#e8f5ff;
+	border:solid 1px #87b7dc;			/* 寬度改成零才設下面的陰影(考慮 #bbd4e6) */
+} */
+
+/* 手機版商品列表的樣式 (必須用程式才有效)
+.tbrow{
+	border:0px;
+	border-radius:0px;
+	box-shadow:0 3px 8px 0 rgba(0,0,0,0.2);
+} */
