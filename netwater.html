@@ -1,19 +1,19 @@
 <style>
 
-//基本資料的超連結顏色
+/* 基本資料的超連結顏色 */
 a{
 	color:#2977d2;
 }
 
-//訂購按鈕、手機版齒輪工具列按鈕、手機版齒輪工具列之查訂單輸入框與按鈕、會員工具列輸入框與按鈕的樣式
+/* 訂購按鈕、手機版齒輪工具列按鈕、手機版齒輪工具列之查訂單輸入框與按鈕、會員工具列輸入框與按鈕的樣式 */
 .buy,
 #tool_box input,
 #chk_order_div input,
 #mem_box input{
 	background-color:#e8f5ff;
 	margin:0px 0px 0px 0px;
-	border:solid 1px #87b7dc;			//寬度改成零才設下面的陰影(考慮 #bbd4e6)
-	//box-shadow:0 0 8px 0 rgba(135,183,220,0.9);	//上面改成零才設這個的陰影
+	border:solid 1px #87b7dc;			/* 寬度改成零才設下面的陰影(考慮 #bbd4e6) */
+	/* box-shadow:0 0 8px 0 rgba(135,183,220,0.9);	上面改成零才設這個的陰影 */
 	border-radius:4px;
 	font-size:20px;
 	padding:7px;
@@ -21,7 +21,7 @@ a{
 	font-family:新細明體;
 }
 
-//商品分類選單的樣式 (包括左邊、上面、左邊跳出細分類選單)
+/* 商品分類選單的樣式 (包括左邊、上面、左邊跳出細分類選單) */
 .pc1_cl, .pc1_nr, .pc2_box,
 .pc2b_cl, .pc2b_nr,
 .pc2_cl, .pc2_nr{
@@ -29,12 +29,12 @@ a{
 	font-size:12pt;
 }
 
-//商品分類名稱上數量樣式
+/* 商品分類名稱上數量樣式 */
 .p_ct{
 	white-space:nowrap;
 }
 
-//商品主分類文字樣式
+/* 商品主分類文字樣式 */
 .cls_name{
 	color:#2f8cde;
 	font-weight:bold;
@@ -44,7 +44,7 @@ a{
 	color:#090;
 }
 
-//商品子分類前標文字、縮排、清除底線 (原本就是 ▶ indent:-13px bottom:4px，有改成 ► indent:-20px padding:0px 0px 5px 41px 但手機縮排太多算了)
+/* 商品子分類前標文字、縮排、清除底線 (原本就是 ▶ indent:-13px bottom:4px，有改成 ► indent:-20px padding:0px 0px 5px 41px 但手機縮排太多算了) */
 .pc2_nr::before{
 	content:'▸ ';
 	color:#2f8cde;
@@ -60,21 +60,21 @@ a{
 	text-shadow:1px 1px #fff;
 }
 
-//【電腦版專用】商品頁第一塊(商品資訊與訂購)樣式
+/* 【電腦版專用】商品頁第一塊(商品資訊與訂購)樣式 */
 div:nth-of-type(2){
 	background:url(http://61.63.55.134/29956/self/j20170526153349.jpg) center bottom no-repeat;
 }
-div div:nth-of-type(2){		//商品頁第一塊第二個網址背景取代前面 nth-of-type(2) 的設定(清除背景)
+div div:nth-of-type(2){		/* 商品頁第一塊第二個網址背景取代前面 nth-of-type(2) 的設定(清除背景) */
 	background:url()
 }
-.p_tiemH,			//商品頁最上塊去掉虛線分隔線
+.p_tiemH,			/* 商品頁最上塊去掉虛線分隔線 */
 .p_tiem{
 	background:url();
 }
 
-//商品頁留言表格樣式
-div:nth-of-type(5) div{background:url()}	//留言表格背景取代前面 nth-of-type(2) 的設定(清除背景)
-.table_msg .title1,				//留言表格格線與欄位背景清除
+/* 商品頁留言表格樣式 */
+div:nth-of-type(5) div{background:url()}	/* 留言表格背景取代前面 nth-of-type(2) 的設定(清除背景) */
+.table_msg .title1,				/* 留言表格格線與欄位背景清除 */
 .table_msg th,
 .table_msg td,
 .table_msg{
@@ -83,7 +83,7 @@ div:nth-of-type(5) div{background:url()}	//留言表格背景取代前面 nth-of
 }
 
 </style>
-
+<!------------------------------------------------------------------------------------------------------------------------------------------------>
 <script>
 
 //【電腦版專用】焦點商品跑馬燈
