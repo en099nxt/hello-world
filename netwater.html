@@ -1,19 +1,19 @@
 <style>
 
-/* 基本資料的超連結顏色 */
+//基本資料的超連結顏色
 a{
 	color:#2977d2;
 }
 
-/* 訂購按鈕、手機版齒輪工具列按鈕、手機版齒輪工具列之查訂單輸入框與按鈕、會員工具列輸入框與按鈕的樣式 */
+//訂購按鈕、手機版齒輪工具列按鈕、手機版齒輪工具列之查訂單輸入框與按鈕、會員工具列輸入框與按鈕的樣式
 .buy,
 #tool_box input,
 #chk_order_div input,
 #mem_box input{
 	background-color:#e8f5ff;
 	margin:0px 0px 0px 0px;
-	border:solid 1px #87b7dc;			/* 寬度改成零才設下面的陰影(考慮 #bbd4e6) */
-	/* box-shadow:0 0 8px 0 rgba(135,183,220,0.9);	上面改成零才設這個的陰影 */
+	border:solid 1px #87b7dc;			//寬度改成零才設下面的陰影(考慮 #bbd4e6)
+	//box-shadow:0 0 8px 0 rgba(135,183,220,0.9);	//上面改成零才設這個的陰影
 	border-radius:4px;
 	font-size:20px;
 	padding:7px;
@@ -21,7 +21,7 @@ a{
 	font-family:新細明體;
 }
 
-/* 商品分類選單的樣式 (包括左邊、上面、左邊跳出細分類選單) */
+//商品分類選單的樣式 (包括左邊、上面、左邊跳出細分類選單)
 .pc1_cl, .pc1_nr, .pc2_box,
 .pc2b_cl, .pc2b_nr,
 .pc2_cl, .pc2_nr{
@@ -29,12 +29,12 @@ a{
 	font-size:12pt;
 }
 
-/* 商品分類名稱上數量樣式 */
+//商品分類名稱上數量樣式
 .p_ct{
 	white-space:nowrap;
 }
 
-/* 商品主分類文字樣式 */
+//商品主分類文字樣式
 .cls_name{
 	color:#2f8cde;
 	font-weight:bold;
@@ -44,7 +44,7 @@ a{
 	color:#090;
 }
 
-/* 商品子分類前標文字、縮排、清除底線 (原本就是 ▶ indent:-13px bottom:4px，有改成 ► indent:-20px padding:0px 0px 5px 41px 但手機縮排太多算了) */
+//商品子分類前標文字、縮排、清除底線 (原本就是 ▶ indent:-13px bottom:4px，有改成 ► indent:-20px padding:0px 0px 5px 41px 但手機縮排太多算了)
 .pc2_nr::before{
 	content:'▸ ';
 	color:#2f8cde;
@@ -60,18 +60,27 @@ a{
 	text-shadow:1px 1px #fff;
 }
 
-/* 加入我的最愛按鈕 (後來決定讓它跟地圖一樣灰色)
-.btnOut{
-	background-color:#e8f5ff;
-	border:solid 1px #87b7dc;			/* 寬度改成零才設下面的陰影(考慮 #bbd4e6) */
-} */
+//【電腦版專用】商品頁第一塊(商品資訊與訂購)樣式
+div:nth-of-type(2){
+	background:url(http://61.63.55.134/29956/self/j20170526153349.jpg) center bottom no-repeat;
+}
+div div:nth-of-type(2){		//商品頁第一塊第二個網址背景取代前面 nth-of-type(2) 的設定(清除背景)
+	background:url()
+}
+.p_tiemH,			//商品頁最上塊去掉虛線分隔線
+.p_tiem{
+	background:url();
+}
 
-/* 手機版商品列表的樣式 (必須用程式才有效)
-.tbrow{
-	border:0px;
-	border-radius:0px;
-	box-shadow:0 3px 8px 0 rgba(0,0,0,0.2);
-} */
+//商品頁留言表格樣式
+div:nth-of-type(5) div{background:url()}	//留言表格背景取代前面 nth-of-type(2) 的設定(清除背景)
+.table_msg .title1,				//留言表格格線與欄位背景清除
+.table_msg th,
+.table_msg td,
+.table_msg{
+	background:#fff;
+	border:solid 0px #000;
+}
 
 </style>
 
@@ -107,22 +116,36 @@ $('.pc2_box').ready(function(){
 
 //【手機版專用】左邊選單樣式
 if($('#product_cls_menu').length==1){									//判斷是否有手機版商品選單存在
-	$('#product_cls_cont').ready(function(){							//選單整體
-		$('#product_cls_cont').css('background-color','#e2f1ff');
-		$('#product_cls_cont div:last-child span:nth-child(1)').css('color','#2977d2');		//改選電腦版的按鈕改顏色
-		$('#product_cls_cont div:last-child').css('color','#000');				//改選手機版的按鈕改顏色
+	//黑背景高度拉高才不會捲軸下拉時破圖
+	$('#bg5').ready(function(){
+		$('#bg5').css('height','200%');
 	});
-	$('.pc1_cl').ready(function(){									//已選的主分類
+
+	//已選的主分類
+	$('.pc1_cl').ready(function(){
 		$('.pc1_cl').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'padding-left':'27px', 'background-image':'url(http://61.63.55.134/29956/self/j20170628151255.jpg)'});
 	});
-	$('.pc1_nr').ready(function(){									//主分類
+
+	//主分類
+	$('.pc1_nr').ready(function(){
 		$('.pc1_nr').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'padding-left':'27px', 'background-image':'url(http://61.63.55.134/29956/self/j20170628145838.jpg)'});
 	});
-	$('.pc2_cl').ready(function(){									//已選的次分類
+
+	//已選的次分類
+	$('.pc2_cl').ready(function(){
 		$('.pc2_cl').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'color':'#000'});
 	});
-	$('.pc2_nr').ready(function(){									//次分類
+
+	//次分類
+	$('.pc2_nr').ready(function(){
 		$('.pc2_nr').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'color':'#000'});
+	});
+
+	//選單整體
+	$('#product_cls_cont').ready(function(){
+		$('#product_cls_cont').css({'background-color':'#e2f1ff','border-radius':'0 0 23px 23px','border':'solid 1px #fff','border-top':'0','margin-left':'3px','height':$(window).height()-4+'px'});
+		$('#product_cls_cont div:last-child span:nth-child(1)').css('color','#2977d2');		//改選電腦版的按鈕改顏色
+		$('#product_cls_cont div:last-child').css('color','#000');				//改選手機版的按鈕改顏色
 	});
 }
 
@@ -179,13 +202,11 @@ $('.percent100').click(function(){
 	//以下是房子工具列
 	$('#unit_box').css({'border-radius':'55px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
 	$('#unit_box img').css({'border-radius':'7px','box-shadow':'0 2px 8px 0 rgba(202,202,202,0.9)','margin':'4px'});
-	//$('#unit_box img').css('clip-path','inset(11px 2px 3px 0px)');				//按鈕剪裁跟圓角只能二選一
 	$('#unit_box>div>img').css('display','none');							//去掉右上角叉叉按鈕
 	$('#unit_box span:nth-child(1)').css('color','#2977d2');					//改選電腦版的按鈕改顏色
 
 	//以下是齒輪工具列
 	$('#tool_box').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
-	//$('#tool_box input').css({'background-color':'#e8f5ff','border':'solid 1px #87b7dc','border-radius':'4px','font-size':'20px','padding':'7px','text-shadow':'1px 1px #fff','font-family':'新細明體'});			//改用 CSS 設定，只差字體大小但手機看沒問題
 	$('#state_div').css({'background-color':'#e8f5ff','border':'solid 1px #87b7dc','border-radius':'4px','font-size':'13pt','padding':'7px','text-shadow':'1px 1px #fff','font-family':'新細明體','width':'104px','color':'#000'});
 	$('#tool_box>div>img').css('display','none');							//去掉右上角叉叉按鈕
 	$('#tool_box span:nth-child(1)').css('color','#2977d2');					//改選電腦版的按鈕改顏色
@@ -195,7 +216,6 @@ $('.percent100').click(function(){
 	$('#mem_box form').css('background','#fff');							//表單背景樣式
 	$('#mem_box input').css({'font-size':'20px','height':'auto','border-color':'#87b7dc'});		//按鈕樣式，其他樣式已在 CSS 設定
 	$('#mem_box div').css('font-size','18px');							//文字大小
-	//$('#mem_email').attr('size','10');								//會員登入欄位帳號變長 (沒作用，要從 CSS 改，但改了其他欄位會跑掉，放棄)
 	$('#mem_email_hint').css({'top':'8px','left':'18px'});						//會員登入欄位帳號提示
 	$('#mem_pw_hint').css({'top':'8px','left':'12px'});						//會員登入欄位密碼提示
 	$('#mem_box>div>img').css('display','none');							//去掉右上角叉叉按鈕
@@ -210,13 +230,11 @@ $('#tool_box input').click(function(){
 
 	//以下是齒輪工具列之暫存的購物
 	$('#iframe_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)','padding':'21px'});
-	//$('#iframe_div iframe').css('border-radius','14px');						//嵌入網頁圓角 (手機上沒作用放棄)
 	$('#iframe_div>div>img').css('display','none');							//去掉右上角叉叉按鈕
 });
 $('#mem_box span').click(function(){
 	//以下是會員工具列之忘記密碼 (同：齒輪工具列之暫存的購物)
 	$('#iframe_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)','padding':'21px'});
-	//$('#iframe_div iframe').css('border-radius','14px');						//嵌入網頁圓角 (手機上沒作用放棄)
 	$('#iframe_div>div>img').css('display','none');							//去掉右上角叉叉按鈕
 });
 
@@ -232,7 +250,7 @@ $('#homebt').ready(function(){
 
 //【手機版專用】移到最頂層按鈕
 $('#gotop').ready(function(){
-	$('#gotop').attr('src','http://61.63.55.134/29956/self/j20170703123947.jpg')
+	$('#gotop').attr('src','http://61.63.55.134/29956/self/j20170703123947.jpg');
 });
 
 </script>
