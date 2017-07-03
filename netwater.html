@@ -212,8 +212,12 @@ $('#mem_box span').click(function(){
 });
 
 //【手機版專用】網頁最底部資訊
+if($('#product_cls_menu').length==1){
 $('#homebt').ready(function(){
 	$('#homebt span:nth-child(1)').css('color','#2977d2');						//改選電腦版的按鈕改顏色
 });
+}else{
+	$('#homebt span:nth-child(2)').css('color','#2977d2');
+}
 
 </script>
