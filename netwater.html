@@ -77,9 +77,10 @@ a{
 
 <script>
 
-//焦點商品跑馬燈文字區高度增加
+//【電腦版專用】焦點商品跑馬燈
 $('#marqueeP').ready(function(){
-	$('#marqueeP').height(248);
+	$('#marqueeP').height(248);	//文字顯示區域高度增加才不會名稱太長被遮掉
+	$('#marqueeP').width(1006);	//讓最後一樣(一排只有四樣)商品名稱的前標文字「豪美、」不會斷行
 });
 
 //【手機版專用】橫幅設定、網站名稱設定
@@ -105,20 +106,22 @@ $('.pc2_box').ready(function(){
 });
 
 //【手機版專用】左邊選單樣式
-if($('#product_cls_menu').length==1){						//判斷是否有手機版商品選單存在
-	$('#product_cls_cont').ready(function(){				//選單整體
-		$('#product_cls_cont').css('background-color','#e2f1ff')
+if($('#product_cls_menu').length==1){									//判斷是否有手機版商品選單存在
+	$('#product_cls_cont').ready(function(){							//選單整體
+		$('#product_cls_cont').css('background-color','#e2f1ff');
+		$('#product_cls_cont div:last-child span:nth-child(1)').css('color','#2977d2');		//改選電腦版的按鈕改顏色
+		$('#product_cls_cont div:last-child').css('color','#000');				//改選手機版的按鈕改顏色
 	});
-	$('.pc1_cl').ready(function(){						//已選的主分類
+	$('.pc1_cl').ready(function(){									//已選的主分類
 		$('.pc1_cl').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'padding-left':'27px', 'background-image':'url(http://61.63.55.134/29956/self/j20170628151255.jpg)'});
 	});
-	$('.pc1_nr').ready(function(){						//主分類
+	$('.pc1_nr').ready(function(){									//主分類
 		$('.pc1_nr').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'padding-left':'27px', 'background-image':'url(http://61.63.55.134/29956/self/j20170628145838.jpg)'});
 	});
-	$('.pc2_cl').ready(function(){						//已選的次分類
+	$('.pc2_cl').ready(function(){									//已選的次分類
 		$('.pc2_cl').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'color':'#000'});
 	});
-	$('.pc2_nr').ready(function(){						//次分類
+	$('.pc2_nr').ready(function(){									//次分類
 		$('.pc2_nr').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'color':'#000'});
 	});
 }
@@ -146,14 +149,20 @@ $('.pc2b_nr').ready(function(){							//商品分類頁上面列表原始
 	});
 });
 
-//【手機版商品分類頁專用】剛剛瀏覽的商品背景色會顯示粉紅色改成淡藍色
+//【手機版專用】商品分類頁、熱門商品樣式
 $('.tbrow').ready(function(){
+	//剛剛瀏覽的商品背景色會顯示粉紅色改成淡藍色
 	$('.tbrow').each(function(){
 		if($(this).css('background-color')=='rgb(255, 221, 221)'){
 			$(this).css('background-color','#ddefff')
 		}
 	});
-	$('.tbrow').css({'border':'0px','border-radius':'0px','box-shadow':'0 3px 8px 0 rgba(135,183,220,0.2)'});
+
+	//商品列表樣式
+	$('.tbrow').css({'border':'0px','border-radius':'0px','box-shadow':'0 0 4px 1px rgba(68,159,214,0.53)','width':'98%'});
+
+	//看所有熱門商品超連結樣式
+	$('.tbrow').parent().parent().find('td>div>a').css('color','#2977d2');
 });
 
 //【手機版專用】下方工具列樣式
@@ -177,7 +186,7 @@ $('.percent100').click(function(){
 	//以下是齒輪工具列
 	$('#tool_box').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
 	//$('#tool_box input').css({'background-color':'#e8f5ff','border':'solid 1px #87b7dc','border-radius':'4px','font-size':'20px','padding':'7px','text-shadow':'1px 1px #fff','font-family':'新細明體'});			//改用 CSS 設定，只差字體大小但手機看沒問題
-	$('#state_div').css({'background-color':'#e8f5ff','border':'solid 1px #87b7dc','border-radius':'4px','font-size':'13pt','padding':'7px','text-shadow':'1px 1px #fff','font-family':'新細明體','width':'104px'});
+	$('#state_div').css({'background-color':'#e8f5ff','border':'solid 1px #87b7dc','border-radius':'4px','font-size':'13pt','padding':'7px','text-shadow':'1px 1px #fff','font-family':'新細明體','width':'104px','color':'#000'});
 	$('#tool_box>div>img').css('display','none');							//去掉右上角叉叉按鈕
 	$('#tool_box span:nth-child(1)').css('color','#2977d2');					//改選電腦版的按鈕改顏色
 
@@ -211,16 +220,14 @@ $('#mem_box span').click(function(){
 	$('#iframe_div>div>img').css('display','none');							//去掉右上角叉叉按鈕
 });
 
-//【手機版專用】網頁最底部資訊
-if($('#product_cls_menu').length==1){
-	//alert('');
+//網頁最底部資訊
 $('#homebt').ready(function(){
-	$('#homebt span:nth-child(1)').css('color','#2977d21');						//改選電腦版的按鈕改顏色
+	if($('#product_cls_menu').length==1){					//判斷是否有手機版商品選單存在
+		$('#homebt span:nth-child(1)').css('color','#2977d2');		//改選電腦版的按鈕改顏色
+	}
+	else{
+		$('#homebt span:nth-child(2)').css('color','#2977d2');		//改選手機版的按鈕改顏色
+	}
 });
-}
-else{
-	//alert('');
-	$('div#homebt div span').css('color','#2977d2');
-}
 
 </script>
