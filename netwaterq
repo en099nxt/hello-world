@@ -118,7 +118,7 @@ $('#netwaterShowProductDetail').ready(function(){
 				'productId':PId
 			},
 			function(data){
-				if(PClass=='主機'){data+'<hr><hr><hr><hr>'}
+				if(PClass=='主機'){data+='<hr><hr><hr><hr>'}
 				$('#netwaterShowProductDetail img').fadeOut('slow',function(){
 					$("#netwaterShowProductDetail").html(data);
 				});
