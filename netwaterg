@@ -126,7 +126,7 @@ $('#netwaterShowProductDetail').ready(function(){
 					data+="<img width=0 class=san_pin_bau_ku_fu_wu src=http://61.63.55.134/29956/self/j20170526154533.jpg>";
 					data+="</center>";
 				}
-				$('#netwaterShowProductDetail').fadeOut('slow',function(){
+				$('#netwaterShowProductDetail').fadeOut(700,function(){
 					$("#netwaterShowProductDetail").html(data).fadeIn();
 				});
 			}
