@@ -127,7 +127,7 @@ $('#netwaterShowProductDetail').ready(function(){
 					data+="</center>";
 				}
 				$('#netwaterShowProductDetail').fadeOut('slow',function(){
-					$("#netwaterShowProductDetail").html(data).slideToggle();
+					$("#netwaterShowProductDetail").html(data).fadeIn();
 				});
 			}
 		);
