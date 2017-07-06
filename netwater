@@ -115,7 +115,7 @@ $('#netwaterShowProductDetail').ready(function(){
 		$.get("https://script.google.com/macros/s/AKfycbzmN9cabcfTzBAgHmHZClkV3B65tZnQydF7qFKwu7_COfsduY6H/exec",
 			{'productClass':PClass,'productId':PId},
 			function(data){
-				$('#netwaterShowProductDetail>img').fadeOut(3000,function(){
+				$('#netwaterShowProductDetail img').fadeOut(3000,function(){
 					$("#ShowProductDetail").html(data);
 				});
 			}
