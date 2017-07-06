@@ -116,7 +116,7 @@ $('#netwaterShowProductDetail').ready(function(){
 			{'productClass':PClass,'productId':PId},
 			function(data){
 				$('#netwaterShowProductDetail img').fadeOut(3000,function(){
-					$("#ShowProductDetail").html(data);
+					$("#netwaterShowProductDetail").html(data);
 				});
 			}
 		);
