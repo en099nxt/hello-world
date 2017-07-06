@@ -113,7 +113,10 @@ a{
 $('#netwaterShowProductDetail').ready(function(){
 	function DetailTable(PClass,PId){
 		$.get("https://script.google.com/macros/s/AKfycbzmN9cabcfTzBAgHmHZClkV3B65tZnQydF7qFKwu7_COfsduY6H/exec",
-			{'productClass':PClass,'productId':PId},
+			{
+				'productClass':PClass,
+				'productId':PId
+			},
 			function(data){
 				$('#netwaterShowProductDetail img').fadeOut('fast',function(){
 					$("#netwaterShowProductDetail").html(data);
