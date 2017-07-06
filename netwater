@@ -236,18 +236,32 @@ $('.pc2b_nr').ready(function(){							//商品分類頁上面列表原始
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //商品列表名稱上的次方字體大小修正
 if($('.percent100').length>=1){					//判斷是否有手機版 .percent100 存在
-	$('.p_ul').ready(function(){
-		$('.p_ul').each(function(){
-			$(this).html(	$(this).html().replace(/\^2$/g,'<sup>2</sup>')	);
+	if($('.p_tiem').length>=1){				//判斷是否有商品頁才有的 .p_tiem 區塊存在
+		$('#main_div>div:nth-of-type(2)').ready(function(){
+			$('#main_div>div:nth-of-type(2)').html().replace(/\^2$/g,'<sup>2</sup>');
 		});
-	});
+	}
+	else{							//如果不是商品頁
+		$('.p_ul').ready(function(){
+			$('.p_ul').each(function(){
+				$(this).html(	$(this).html().replace(/\^2$/g,'<sup>2</sup>')	);
+			});
+		});
+	}
 }
-else{
-	$('.p_ul li a').ready(function(){
-		$('.p_ul li a').each(function(){
-			$(this).html(	$(this).html().replace(/\^2$/g,'<sup>2</sup>')	);
+else{								//如果是電腦版
+	if($('.p_tiem').length>=1){				//判斷是否有商品頁才有的 .p_tiem 區塊存在
+		$('#product_name').ready(function(){
+			$('#product_name').html().replace(/\^2$/g,'<sup>2</sup>');
 		});
-	});
+	}
+	else{							//如果不是商品頁
+		$('.p_ul li a').ready(function(){
+			$('.p_ul li a').each(function(){
+				$(this).html(	$(this).html().replace(/\^2$/g,'<sup>2</sup>')	);
+			});
+		});
+	}
 }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
