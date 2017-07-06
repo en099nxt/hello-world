@@ -429,6 +429,7 @@ if($('.p_tiem').length>=1){											//判斷是否有商品頁才有的 .p_tie
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //【商品頁專用】商品認證與服務顯示動畫
+$(window).scroll(function(){
 $('.san_pin_ren_zhen_1').ready(function(){
 	if($('.san_pin_ren_zhen_1').css('width')=='0px' && $(window).scrollTop() >= $('.san_pin_ren_zhen_1').offset().top-$(window).height()*0.9){
 		$('.san_pin_ren_zhen_1').animate({width:'700px'},400,function(){
@@ -437,6 +438,7 @@ $('.san_pin_ren_zhen_1').ready(function(){
 			})
 		});
 	}
+});
 });
 
 </script>
