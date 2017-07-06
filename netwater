@@ -109,6 +109,22 @@ a{
 
 <script>
 
+//讀取商品詳細資料
+$('#netwaterShowProductDetail').ready(function(){
+	function DetailTable(PClass,PId){
+		$.get("https://script.google.com/macros/s/AKfycbzmN9cabcfTzBAgHmHZClkV3B65tZnQydF7qFKwu7_COfsduY6H/exec",
+			{'productClass':PClass,'productId':PId},
+			function(data){
+				$('#netwaterShowProductDetail>img').fadeOut(3000,function(){
+					$("#ShowProductDetail").html(data);
+				});
+			}
+		);
+	}
+	DetailTable($('#netwaterShowProductDetail').attr('alt'),location.pathname.replace('/product/',''));
+});
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //【電腦版專用】焦點商品跑馬燈
 $('#marqueeP').ready(function(){
 	$('#marqueeP').height(248);	//文字顯示區域高度增加才不會名稱太長被遮掉
