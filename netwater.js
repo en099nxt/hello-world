@@ -1,31 +1,33 @@
 
-//讀取商品詳細資料
-$('#netwaterShowProductDetail').ready(function(){
-	$('#netwaterShowProductDetail').html("<center><img src=http://61.63.55.134/29956/self/j20170706105340.jpg style='width:44px;opacity:0.2'></center>");	//第一件事先把商品頁才有的商品詳細資料區塊顯示載入中動畫
-	function DetailTable(PClass,PId){
-		$.get("https://script.google.com/macros/s/AKfycbzmN9cabcfTzBAgHmHZClkV3B65tZnQydF7qFKwu7_COfsduY6H/exec",
-			{
-				'productClass':PClass,
-				'productId':PId
-			},
-			function(data){
-				if(PClass=='主機'){
-					data+="<br><br>";
-					data+="<center>";
-					data+="<span style='color:#0171d1; font-size:19px;'>全系列濾材皆經國際認證及濾芯外殼經ＳＧＳ台灣檢驗ＦＤＡ無毒認證</span><br>";
-					data+="<img width=0 class=san_pin_ren_zhen_1 src=http://61.63.55.134/29956/self/j20170526111811.jpg><br>";
-					data+="<img width=0 class=san_pin_ren_zhen_2 src=http://61.63.55.134/29956/self/j20170526114226.jpg><br>";
-					data+="<img width=0 class=san_pin_bau_ku_fu_wu src=http://61.63.55.134/29956/self/j20170526154533.jpg>";
-					data+="</center>";
+//【商品頁專用】讀取商品詳細資料
+if($('.p_tiem').length>=1){																		//判斷是否有商品頁才有的 .p_tiem 區塊存在
+	$('#netwaterShowProductDetail').ready(function(){
+		$('#netwaterShowProductDetail').html("<center><img src=http://61.63.55.134/29956/self/j20170706105340.jpg style='width:44px;opacity:0.2'></center>");	//第一件事先把商品頁才有的商品詳細資料區塊顯示載入中動畫
+		function DetailTable(PClass,PId){
+			$.get("https://script.google.com/macros/s/AKfycbzmN9cabcfTzBAgHmHZClkV3B65tZnQydF7qFKwu7_COfsduY6H/exec",
+				{
+					'productClass':PClass,
+					'productId':PId
+				},
+				function(data){
+					if(PClass=='主機'){
+						data+="<br><br>";
+						data+="<center>";
+						data+="<span style='color:#0171d1; font-size:19px;'>全系列濾材皆經國際認證及濾芯外殼經ＳＧＳ台灣檢驗ＦＤＡ無毒認證</span><br>";
+						data+="<img width=0 class=san_pin_ren_zhen_1 src=http://61.63.55.134/29956/self/j20170526111811.jpg><br>";
+						data+="<img width=0 class=san_pin_ren_zhen_2 src=http://61.63.55.134/29956/self/j20170526114226.jpg><br>";
+						data+="<img width=0 class=san_pin_bau_ku_fu_wu src=http://61.63.55.134/29956/self/j20170526154533.jpg>";
+						data+="</center>";
+					}
+					$('#netwaterShowProductDetail').fadeOut(400,function(){
+						$("#netwaterShowProductDetail").html(data).fadeIn();
+					});
 				}
-				$('#netwaterShowProductDetail').fadeOut(400,function(){
-					$("#netwaterShowProductDetail").html(data).fadeIn();
-				});
-			}
-		);
-	}
-	DetailTable($('#netwaterShowProductDetail').attr('alt'),location.pathname.replace('/product/',''));
-});
+			);
+		}
+		DetailTable($('#netwaterShowProductDetail').attr('alt'),location.pathname.replace('/product/',''));
+	});
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //【電腦版專用】焦點商品跑馬燈
