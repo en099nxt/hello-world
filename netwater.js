@@ -379,6 +379,6 @@ if($('.p_tiem').length>=1){											//判斷是否有商品頁才有的 .p_tie
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //商品搜尋結果
-$('#kw_page_top a,#kw_page_bottom a').ready(function(){
+$('kw_page_top a,#kw_page_bottom a').ready(function(){
 	$('#kw_page_top a,#kw_page_bottom a').css({'background-color':'#e8f5ff','border':'solid 1px rgb(135, 183, 220)','font-family':'新細明體'});
 });
