@@ -1,6 +1,7 @@
 
 //讀取商品詳細資料
 $('#netwaterShowProductDetail').ready(function(){
+	$('#netwaterShowProductDetail').html("<center><img src=http://61.63.55.134/29956/self/j20170706105340.jpg style='width:44px;opacity:0.2'></center>");	//第一件事先把商品頁才有的商品詳細資料區塊顯示載入中動畫
 	function DetailTable(PClass,PId){
 		$.get("https://script.google.com/macros/s/AKfycbzmN9cabcfTzBAgHmHZClkV3B65tZnQydF7qFKwu7_COfsduY6H/exec",
 			{
