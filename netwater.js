@@ -41,10 +41,6 @@ if(__Product_Page_NW__){																		//如果是商品頁
 	$('#buyct').ready(function(){
 		$('#buyct').parent().css('font-size','20px');
 		$('#buyct').css({'font-size':'22px','background-color':'#e8f5ff','width':'76px'});
-		if(__Mobile_Style_NW__){																//如果是手機版
-			$('#buyct').parent().css('font-size','18px');
-			$('#buyct').css({'font-size':'28px','margin-bottom':'18px','margin-top':'18px'});								//讓選單不會太擠
-		}
 	});
 	//購買數量選單自行輸入數量框樣式
 	$('#ct_div').ready(function(){
@@ -74,7 +70,7 @@ if(__Product_Page_NW__){																		//如果是商品頁
 
 	//【手機版專用】of【商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(__Mobile_Style_NW__){																	//如果是手機版
-		//商品頁橫幅、網站名稱(跟首頁的樣式並不完全一樣)
+		//手機版商品頁橫幅、網站名稱(跟首頁的樣式並不完全一樣)
 		$('.percent100>table>tbody>tr>td:nth-of-type(2)').ready(function(){
 			$('.percent100>table>tbody>tr>td:nth-of-type(1)>img').attr('src','http://61.63.55.134/29956/self/j20170704113027.jpg');
 			$('.percent100>table>tbody>tr>td:nth-of-type(1)>img').css('padding-top','4px');
@@ -104,6 +100,12 @@ if(__Product_Page_NW__){																		//如果是商品頁
 			$('div#main_div>div:nth-of-type(11)>div:nth-of-type(1)').css({'background-color':'#e8f5ff','font-size':'13px','border':'solid 1px #87b7dc','font-family':'新細明體'});
 		});
 
+		//手機版購買數量選單不要太擠
+		$('#buyct').ready(function(){
+			$('#buyct').parent().css('font-size','18px');
+			$('#buyct').css({'font-size':'28px','margin-bottom':'18px','margin-top':'18px'});
+		});
+
 		//手機版商品頁留言板
 		$('#main_div>div:nth-of-type(13)').ready(function(){													//表格改邊框
 			$('#main_div>div:nth-of-type(13)').css({'box-shadow':'0 0 17px -4px rgba(20%,20%,40%,0.5)','margin-top':'48px'});
@@ -119,7 +121,7 @@ if(__Product_Page_NW__){																		//如果是商品頁
 	}
 	//【電腦版專用】of【商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else{																				//如果是電腦版
-		//商品頁第一塊改背景與邊框
+		//電腦版商品頁第一塊改背景與邊框
 		$('body>div:nth-of-type(2)').ready(function(){
 			$('body>div:nth-of-type(2)').css({'background':'url(http://61.63.55.134/29956/self/j20170526153349.jpg) center bottom no-repeat','box-shadow':'0 3px 17px -4px rgba(20%,20%,40%,0.5)','border-radius':'0'});
 		});
@@ -210,7 +212,7 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 
 	//【手機版專用】of【非商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(__Mobile_Style_NW__){												//如果是手機版
-		//橫幅、網站名稱設定
+		//手機版橫幅、網站名稱設定
 		$('#main_div').ready(function(){
 			//橫幅－選擇手機版全區id下一層的img中第二個(橫幅)，切換成手機板寬度較窄圖
 			$('#main_div>img:nth-of-type(2)').attr('src','http://61.63.55.134/29956/self/j20170614104004.jpg');
@@ -221,7 +223,7 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#main_div>table:nth-of-type(1)>tbody>tr>td:nth-of-type(2)>div').html('<marquee loop=0 behavior=slide>&nbsp;&nbsp;晉歡淨水 Jin Huan Water</marquee>');
 		});
 
-		//左邊選單樣式
+		//手機版左邊商品分類選單樣式
 		$('#bg5').ready(function(){											//黑背景高度拉高才不會捲軸下拉時破圖
 			$('#bg5').css('height','200%');
 		});
@@ -243,12 +245,15 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#product_cls_cont div:last-child').css('color','#000');						//改選手機版的按鈕改顏色
 		});
 
-		//商品分類頁商品列表上方的虛線去掉
-		$('#kw_page_top').ready(function(){
+		//手機版商品分類頁
+		$('select[name="vorder_p"]').ready(function(){									//排序選單
+			$('select[name="vorder_p"]').css({'font-size':'16px','background-color':'#e8f5ff'});
+		});
+		$('#kw_page_top').ready(function(){										//商品列表上方的虛線去掉
 			$('#kw_page_top').parent().find('>div:nth-of-type(2)').css('background','url()');
 		});
 
-		//商品分類頁、熱門商品樣式
+		//手機版商品分類頁、熱門商品樣式
 		$('.tbrow').ready(function(){
 			//剛剛瀏覽的商品背景色會顯示粉紅色改成淡藍色
 			$('.tbrow').each(function(){
@@ -264,14 +269,14 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('.tbrow').parent().parent().find('td>div>a').css('color','#2977d2');
 		});
 
-		//商品列表名稱上的次方字體大小修正
+		//手機版商品列表名稱上的次方字體大小修正
 		$('.p_ul').ready(function(){
 			$('.p_ul').each(function(){
 				$(this).html(	$(this).html().replace(/\^2$/g,'<sup>2</sup>')	);
 			});
 		});
 
-		//下方工具列樣式
+		//手機版下方工具列樣式
 		$('.percent100').ready(function(){
 			$('.percent100 td:nth-child(1n+2)').css({'background-color':'#C9EBFF','color':'#000'});			//不要加粗比較好看(,'font-weight':'bold')
 			$('.percent100 td:nth-child(1n+2) img').css('filter','invert(100%)');
@@ -321,38 +326,36 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#iframe_div>div>img').css('display','none');								//去掉右上角叉叉按鈕
 		});
 
-		//網頁最底部資訊
+		//手機版網頁最底部資訊
 		$('#homebt').ready(function(){
 			$('#homebt span:nth-child(1)').css('color','#2977d2');							//改選電腦版的按鈕改顏色
 		});
 	}
 	//【電腦版專用】of【非商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else{															//如果是電腦版
-		//左邊商品分類選單最上方隱藏的搜尋按鈕
-		$('#shbt').ready(function(){
+		//電腦版左邊商品分類選單樣式
+		$('#shbt').ready(function(){											//最上方隱藏的搜尋按鈕
 			$('#shbt').css({'height':'40px','border':'solid 1px #87b7dc','margin-bottom':'5px'});
 			$('#shbt').parent().css('background-image','url(http://61.63.55.134/29956/self/j20170628091120.jpg)');
 		});
-
-		//左邊選單商品子分類背景
-		$('.pc2_box').ready(function(){
+		$('.pc2_box').ready(function(){											//商品子分類背景
 			$('.pc2_box').css('background-image','url(http://61.63.55.134/29956/self/j20170628091120.jpg)');
 		});
 
-		//焦點商品跑馬燈
+		//電腦版焦點商品跑馬燈
 		$('#marqueeP').ready(function(){
 			$('#marqueeP').height(248);										//文字顯示區域高度增加才不會名稱太長被遮掉
 			$('#marqueeP').width(1006);										//讓最後一樣(一排只有四樣)商品名稱的前標文字「豪美、」不會斷行
 		});
 
-		//商品列表名稱上的次方字體大小修正
+		//電腦版商品列表名稱上的次方字體大小修正
 		$('.p_ul li a').ready(function(){
 			$('.p_ul li a').each(function(){
 				$(this).html(	$(this).html().replace(/\^2$/g,'<sup>2</sup>')	);
 			});
 		});
 
-		//網頁最底部資訊
+		//電腦版網頁最底部資訊
 		$('#homebt').ready(function(){
 			$('#homebt span:nth-child(2)').css('color','#2977d2');							//改選手機版的按鈕改顏色
 		});
