@@ -373,12 +373,3 @@ if(__Mobile_Style_NW__){									//如果是手機版
 $('.price1').ready(function(){
 	$('.price1').css('color','red');
 });
-
-
-
-
-
-
-
-
-$('body').ready(function(){$('body').fadeIn('fast');});
