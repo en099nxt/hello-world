@@ -37,13 +37,12 @@ if(__Product_Page_NW__){																		//如果是商品頁
 		$('.p_tiem>span').css('color','#2977d2');
 	});
 
-	//購買數量選單樣式
-	$('#buyct').ready(function(){
+	//購買數量選單
+	$('#buyct').ready(function(){																	//選單樣式
 		$('#buyct').parent().css('font-size','20px');
 		$('#buyct').css({'font-size':'22px','background-color':'#e8f5ff','width':'76px'});
 	});
-	//購買數量選單自行輸入數量框樣式
-	$('#ct_div').ready(function(){
+	$('#ct_div').ready(function(){																	//自行輸入數量框樣式
 		$('#keyin_val').focus(function(){															//手機版的無法偵測到選擇選項時觸發選單整體被按到的事件，所以改為偵測欄位出現後成為焦點時
 			$('#ct_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
 			$('#ct_div>div>img').css('display','none');													//去掉右上角叉叉按鈕
@@ -247,7 +246,7 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 
 		//手機版商品分類頁
 		$('select[name="vorder_p"]').ready(function(){									//排序選單
-			$('select[name="vorder_p"]').css({'font-size':'16px','background-color':'#e8f5ff'});
+			$('select[name="vorder_p"]').css({'font-size':'22px','background-color':'#e8f5ff','width':'145px'});
 		});
 		$('#kw_page_top').ready(function(){										//商品列表上方的虛線去掉
 			$('#kw_page_top').parent().find('>div:nth-of-type(2)').css('background','url()');
