@@ -1,8 +1,9 @@
 const __Mobile_Style_NW__=($('.percent100').length>=1);		//【手機版專用】判斷是否有手機版 .percent100 存在
 const __Product_Page_NW__=($('.p_tiem').length>=1);		//【商品頁專用】判斷是否有商品頁才有的 .p_tiem 區塊存在
 
-//【商品頁專用】(含【電腦版】或【手機版】)
+//【商品頁專用】for【電腦版】or【手機版】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(__Product_Page_NW__){																		//如果是商品頁
+	//【通用】of【商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	//讀取商品詳細資料
 	$('#netwaterShowProductDetail').ready(function(){
 		$('#netwaterShowProductDetail').html("<center><img src=http://61.63.55.134/29956/self/j20170706105340.jpg style='width:44px;opacity:0.2'></center>");	//第一件事先把商品頁才有的商品詳細資料區塊顯示載入中動畫
@@ -31,8 +32,48 @@ if(__Product_Page_NW__){																		//如果是商品頁
 		DetailTable($('#netwaterShowProductDetail').attr('alt'),location.pathname.replace('/product/',''));
 	});
 
-	//各部分樣式
-	if(__Mobile_Style_NW__){																	//如果是【手機版】
+	//商品頁最上塊分類位置文字顏色
+	$('.p_tiem>span').ready(function(){
+		$('.p_tiem>span').css('color','#2977d2');
+	});
+
+	//購買數量選單樣式
+	$('#buyct').ready(function(){
+		$('#buyct').parent().css('font-size','20px');
+		$('#buyct').css({'font-size':'22px','background-color':'#e8f5ff','width':'76px'});
+		if(__Mobile_Style_NW__){																//如果是手機版
+			$('#buyct').parent().css('font-size','18px');
+			$('#buyct').css({'font-size':'28px','margin-bottom':'18px','margin-top':'18px'});								//讓選單不會太擠
+		}
+	});
+	//購買數量選單自行輸入數量框樣式
+	$('#ct_div').ready(function(){
+		$('#keyin_val').focus(function(){															//手機版的無法偵測到選擇選項時觸發選單整體被按到的事件，所以改為偵測欄位出現後成為焦點時
+			$('#ct_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
+			$('#ct_div>div>img').css('display','none');													//去掉右上角叉叉按鈕
+		});
+	});
+
+	//訂購按鈕樣式(大概是載入比較慢所以 CSS 設定不到)
+	$('.buy').ready(function(){
+		$('.buy').css({'background-color':'#e8f5ff','font-size':'20px','border':'solid 1px #87b7dc','margin':'0 0 0 0','border-radius':'4px','font-family':'新細明體','width':'60px','height':'30px','line-height':'30px'});
+	});
+
+	//商品認證與服務顯示動畫
+	$(window).scroll(function(){
+		$('.san_pin_ren_zhen_1').ready(function(){
+			if($('.san_pin_ren_zhen_1').css('width')=='0px' && $(window).scrollTop() >= $('.san_pin_ren_zhen_1').offset().top-$(window).height()*0.9){
+				$('.san_pin_ren_zhen_1').animate({width:'700px'},400,function(){
+					$('.san_pin_ren_zhen_2').animate({width:'700px'},400,function(){
+						$('.san_pin_bau_ku_fu_wu').animate({width:'700px'},400);
+					})
+				});
+			}
+		});
+	});
+
+	//【手機版專用】of【商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	if(__Mobile_Style_NW__){																	//如果是手機版
 		//商品頁橫幅、網站名稱(跟首頁的樣式並不完全一樣)
 		$('.percent100>table>tbody>tr>td:nth-of-type(2)').ready(function(){
 			$('.percent100>table>tbody>tr>td:nth-of-type(1)>img').attr('src','http://61.63.55.134/29956/self/j20170704113027.jpg');
@@ -75,7 +116,8 @@ if(__Product_Page_NW__){																		//如果是商品頁
 			$('#main_div>div:nth-last-of-type(3)>span:nth-child(1)').css('color','#2977d2');
 		});
 	}
-	else{																				//如果是【電腦版】
+	//【電腦版專用】of【商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	else{																				//如果是電腦版
 		//商品頁第一塊改背景與邊框
 		$('body>div:nth-of-type(2)').ready(function(){
 			$('body>div:nth-of-type(2)').css({'background':'url(http://61.63.55.134/29956/self/j20170526153349.jpg) center bottom no-repeat','box-shadow':'0 3px 17px -4px rgba(20%,20%,40%,0.5)','border-radius':'0'});
@@ -116,53 +158,11 @@ if(__Product_Page_NW__){																		//如果是商品頁
 			$('body>div:nth-last-of-type(2)>span:nth-child(2)').css('color','#2977d2');
 		});
 	}
-
-	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	//【通用版】[之【商品頁專用】]
-	//商品頁最上塊分類位置文字顏色
-	$('.p_tiem>span').ready(function(){
-		$('.p_tiem>span').css('color','#2977d2');
-	});
-
-	//購買數量選單樣式
-	$('#buyct').ready(function(){
-		$('#buyct').parent().css('font-size','20px');
-		$('#buyct').css({'font-size':'22px','background-color':'#e8f5ff','width':'76px'});
-		if(__Mobile_Style_NW__){																//如果是手機版
-			$('#buyct').parent().css('font-size','18px');
-			$('#buyct').css({'font-size':'28px','margin-bottom':'18px','margin-top':'18px'});								//讓選單不會太擠
-		}
-	});
-	//購買數量選單自行輸入數量框樣式
-	$('#ct_div').ready(function(){
-		$('#keyin_val').focus(function(){															//手機版的無法偵測到選擇選項時觸發選單整體被按到的事件，所以改為偵測欄位出現後成為焦點時
-			$('#ct_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
-			$('#ct_div>div>img').css('display','none');													//去掉右上角叉叉按鈕
-		});
-	});
-
-	//訂購按鈕樣式(大概是載入比較慢所以 CSS 設定不到)
-	$('.buy').ready(function(){
-		$('.buy').css({'background-color':'#e8f5ff','font-size':'20px','border':'solid 1px #87b7dc','margin':'0 0 0 0','border-radius':'4px','font-family':'新細明體','width':'60px','height':'30px','line-height':'30px'});
-	});
-
-	//商品認證與服務顯示動畫
-	$(window).scroll(function(){
-		$('.san_pin_ren_zhen_1').ready(function(){
-			if($('.san_pin_ren_zhen_1').css('width')=='0px' && $(window).scrollTop() >= $('.san_pin_ren_zhen_1').offset().top-$(window).height()*0.9){
-				$('.san_pin_ren_zhen_1').animate({width:'700px'},400,function(){
-					$('.san_pin_ren_zhen_2').animate({width:'700px'},400,function(){
-						$('.san_pin_bau_ku_fu_wu').animate({width:'700px'},400);
-					})
-				});
-			}
-		});
-	});
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//【非商品頁專用】(含【電腦版】或【手機版】)
-if(!__Product_Page_NW__){								//如果不是商品頁
+//【非商品頁專用】for【電腦版】or【手機版】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+if(!__Product_Page_NW__){												//如果不是商品頁
+	//【通用】of【非商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	//商品列表預覽圖的樣式
 	$('.imgr8').ready(function(){
 		$('.imgr8').css('max-height','240px');
@@ -174,7 +174,7 @@ if(!__Product_Page_NW__){								//如果不是商品頁
 	$('#kw').ready(function(){
 		$('#kw').css('border','1px solid rgb(135,183,220)');
 	});
-	if(!__Mobile_Style_NW__){							//如果不是手機版 (如果是【電腦版】)
+	if(!__Mobile_Style_NW__){											//如果不是手機版 (如果是【電腦版】)
 		$('#shbt').ready(function(){
 			$('#shbt').css({'height':'40px','border':'solid 1px #87b7dc','margin-bottom':'5px'});
 			$('#shbt').parent().css('background-image','url(http://61.63.55.134/29956/self/j20170628091120.jpg)');
@@ -182,22 +182,22 @@ if(!__Product_Page_NW__){								//如果不是商品頁
 	}
 
 	//商品分類名稱上數量文字替換
-	$('.p_ct').ready(function(){							//左邊列表
+	$('.p_ct').ready(function(){											//左邊列表
 		$('.p_ct').each(function(){
 			$(this).html(	$(this).html().replace(/\.\.\./g,' &nbsp; x ')	);
 		});
 	});
-	$('#p_tol').ready(function(){							//左邊商品總覽
+	$('#p_tol').ready(function(){											//左邊商品總覽
 		$('#p_tol').each(function(){
 			$(this).html(	$(this).html().replace(/\.\.\./g,' &nbsp; × ')	);
 		});
 	});
-	$('.pc2b_cl').ready(function(){							//商品分類頁上面列表反白
+	$('.pc2b_cl').ready(function(){											//商品分類頁上面列表反白
 		$('.pc2b_cl').each(function(){
 			$(this).html(	$(this).html().replace(/\.\.\./g,' &nbsp; × ')	);
 		});
 	});
-	$('.pc2b_nr').ready(function(){							//商品分類頁上面列表原始
+	$('.pc2b_nr').ready(function(){											//商品分類頁上面列表原始
 		$('.pc2b_nr').each(function(){
 			$(this).html(	$(this).html().replace(/\.\.\./g,' &nbsp; × ')	);
 		});
@@ -211,19 +211,8 @@ if(!__Product_Page_NW__){								//如果不是商品頁
 		$('#kw_page_bottom a').css({'background-color':'#e8f5ff','border':'solid 1px rgb(135, 183, 220)','font-family':'新細明體'});
 	});
 
-	//網頁最底部資訊
-	$('#homebt').ready(function(){
-		if(__Mobile_Style_NW__){						//如果是【手機版】
-			$('#homebt span:nth-child(1)').css('color','#2977d2');		//改選電腦版的按鈕改顏色
-		}
-		else{									//如果是【電腦版】
-			$('#homebt span:nth-child(2)').css('color','#2977d2');		//改選手機版的按鈕改顏色
-		}
-	});
-
-	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	//【手機版專用】[之【非商品頁專用】]
-	if(__Mobile_Style_NW__){											//如果是手機版[　＆　不是商品頁]
+	//【手機版專用】of【非商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	if(__Mobile_Style_NW__){											//如果是手機版
 		//橫幅、網站名稱設定
 		$('#main_div>img:nth-of-type(2)').attr('src','http://61.63.55.134/29956/self/j20170614104004.jpg');	//選擇手機版全區id下一層的img中第二個(橫幅)，切換成手機板寬度較窄圖
 		$('#main_div>table:nth-of-type(1)>tbody>tr>td:nth-of-type(2)').css({'background':'#e8f5ff','border-bottom':'1px solid #fff'});
@@ -231,25 +220,25 @@ if(!__Product_Page_NW__){								//如果不是商品頁
 		$('#main_div>table:nth-of-type(1)>tbody>tr>td:nth-of-type(2)>div').html('<marquee loop=0 behavior=slide>&nbsp;&nbsp;晉歡淨水 Jin Huan Water</marquee>');
 
 		//左邊選單樣式
-		$('#bg5').ready(function(){									//黑背景高度拉高才不會捲軸下拉時破圖
+		$('#bg5').ready(function(){										//黑背景高度拉高才不會捲軸下拉時破圖
 			$('#bg5').css('height','200%');
 		});
-		$('.pc1_cl').ready(function(){									//已選的主分類
+		$('.pc1_cl').ready(function(){										//已選的主分類
 			$('.pc1_cl').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'padding-left':'27px', 'background-image':'url(http://61.63.55.134/29956/self/j20170628151255.jpg)'});
 		});
-		$('.pc1_nr').ready(function(){									//主分類
+		$('.pc1_nr').ready(function(){										//主分類
 			$('.pc1_nr').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'padding-left':'27px', 'background-image':'url(http://61.63.55.134/29956/self/j20170628145838.jpg)'});
 		});
-		$('.pc2_cl').ready(function(){									//已選的次分類
+		$('.pc2_cl').ready(function(){										//已選的次分類
 			$('.pc2_cl').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'color':'#000'});
 		});
-		$('.pc2_nr').ready(function(){									//次分類
+		$('.pc2_nr').ready(function(){										//次分類
 			$('.pc2_nr').css({'background-color':'#e2f1ff', 'border-radius':'0px', 'border-bottom':'0px', 'color':'#000'});
 		});
-		$('#product_cls_cont').ready(function(){							//選單整體
+		$('#product_cls_cont').ready(function(){								//選單整體
 			$('#product_cls_cont').css({'background-color':'#e2f1ff','border-radius':'0 0 23px 23px','border':'solid 1px #fff','border-top':'0','margin-left':'3px','height':$(window).height()-4+'px'});
-			$('#product_cls_cont div:last-child span:nth-child(1)').css('color','#2977d2');		//改選電腦版的按鈕改顏色
-			$('#product_cls_cont div:last-child').css('color','#000');				//改選手機版的按鈕改顏色
+			$('#product_cls_cont div:last-child span:nth-child(1)').css('color','#2977d2');			//改選電腦版的按鈕改顏色
+			$('#product_cls_cont div:last-child').css('color','#000');					//改選手機版的按鈕改顏色
 		});
 
 		//商品分類頁、熱門商品樣式
@@ -322,26 +311,33 @@ if(!__Product_Page_NW__){								//如果不是商品頁
 			$('#iframe_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)','padding':'21px'});
 			$('#iframe_div>div>img').css('display','none');							//去掉右上角叉叉按鈕
 		});
-	}
 
-	//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	//【電腦版專用】[【非手機版專用】之【非商品頁專用】]
-	if(!__Mobile_Style_NW__){						//如果不是手機版[　＆　不是商品頁 (如果是電腦版)]
+		//網頁最底部資訊
+		$('#homebt').ready(function(){
+			$('#homebt span:nth-child(1)').css('color','#2977d2');						//改選電腦版的按鈕改顏色
+		});
+	}
+	//【電腦版專用】of【非商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	else{														//如果是電腦版
 		//焦點商品跑馬燈
 		$('#marqueeP').ready(function(){
-			$('#marqueeP').height(248);				//文字顯示區域高度增加才不會名稱太長被遮掉
-			$('#marqueeP').width(1006);				//讓最後一樣(一排只有四樣)商品名稱的前標文字「豪美、」不會斷行
+			$('#marqueeP').height(248);									//文字顯示區域高度增加才不會名稱太長被遮掉
+			$('#marqueeP').width(1006);									//讓最後一樣(一排只有四樣)商品名稱的前標文字「豪美、」不會斷行
 		});
 
 		//左邊選單商品子分類背景
 		$('.pc2_box').ready(function(){
 			$('.pc2_box').css('background-image','url(http://61.63.55.134/29956/self/j20170628091120.jpg)');
 		});
+
+		//網頁最底部資訊
+		$('#homebt').ready(function(){
+			$('#homebt span:nth-child(2)').css('color','#2977d2');						//改選手機版的按鈕改顏色
+		});
 	}
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//【手機版專用】(含【商品頁】或【非商品頁】)
+//【手機版專用】for【商品頁】and【非商品頁】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(__Mobile_Style_NW__){									//如果是手機版
 	//移到最頂層按鈕
 	$('#gotop').ready(function(){
@@ -349,14 +345,12 @@ if(__Mobile_Style_NW__){									//如果是手機版
 	});
 }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//【通用】商品價格
+//【通用】商品價格/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 $('.price1').ready(function(){
 	$('.price1').css('color','red');
 });
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//【通用】商品列表名稱上的次方字體大小修正
+//【通用】商品列表名稱上的次方字體大小修正/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(__Mobile_Style_NW__){					//如果是手機版
 	if(__Product_Page_NW__){				//如果是商品頁
 		$('#main_div>div:nth-of-type(2)').ready(function(){
