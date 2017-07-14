@@ -364,16 +364,9 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 		$('#M_img').ready(function(){											//大圖
 			$('#M_img').css({'border-radius':'','margin-right':'10px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});
 		});
-		$('.imgr8').click(function(){											//黑背景
-			
-			setTimeout(function(){
-				//$('#img_box').css('display','none');
-				$('#bg_pic').css('display','none');
-				$('#bg_pic').css('opacity','0.3');
-				//$('#img_box').fadeIn();
-				$('#bg_pic').fadeIn();
-			},0);
-		});
+		//$('.imgr8').click(function(){											//黑背景改淡(放棄因為會閃爍，其他黑背景也沒有一個改成功的)
+		//	setTimeout(	"$('#bg_pic').css('opacity','0.3')"	,100);
+		//});
 
 		//電腦版網頁最底部資訊
 		$('#homebt').ready(function(){
