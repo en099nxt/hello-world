@@ -359,10 +359,10 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#img_box').css({'border':'1px solid rgb(130, 166, 210)','background':'url(http://61.63.55.131/pattern/737/1.gif)','padding':'37px'});
 		});
 		$('#img_box>div>div').ready(function(){										//快速看圖標題
-			$('#img_box>div>div').css({'font-size':'24px','color':'#5984ca'});
+			$('#img_box>div>div').css({'font-size':'24px','color':'#5984ca','font-style':'italic'});
 		});
 		$('#M_img').ready(function(){											//大圖
-			$('#M_img').css({'border-radius':'','margin-right':'10px'});
+			$('#M_img').css({'border-radius':'','margin-right':'10px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});
 		});
 		$('#bg_pic').ready(function(){											//黑背景
 			$('#bg_pic').css('opacity','0.3');
