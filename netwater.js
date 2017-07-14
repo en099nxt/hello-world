@@ -356,7 +356,7 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 
 		//電腦版快速看商品圖樣式
 		$('#img_box').ready(function(){											//整體
-			$('#img_box').css({'border':'1px solid rgb(130, 166, 210)','background':'url(http://61.63.55.131/pattern/737/1.gif)','padding':'37px'});
+			$('#img_box').css({'border':'1px solid rgb(130, 166, 210)','background':'url(http://61.63.55.131/pattern/737/1.gif)','padding':'37px','padding-top':'33px'});
 		});
 		$('#img_box>div>div').ready(function(){										//快速看圖標題
 			$('#img_box>div>div').css({'font-size':'24px','color':'#5984ca','font-style':'italic'});
@@ -364,8 +364,8 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 		$('#M_img').ready(function(){											//大圖
 			$('#M_img').css({'border-radius':'','margin-right':'10px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});
 		});
-		$('.imgr8').click(function(){											//黑背景改淡(放棄因為會閃爍，其他黑背景也沒有一個改成功的，原因是點完消失後整個 DOM 都整個刪掉了，下次才又創新的出來)
-			//$('#bg_pic').css('background-color','#def');
+		$('.imgr8').click(function(){											//黑背景改淡
+			$('#bg_pic').css('background-color','#bcd');
 		});
 
 		//電腦版網頁最底部資訊
