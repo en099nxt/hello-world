@@ -94,11 +94,11 @@ a{
 	text-shadow:1px 1px #000;
 }
 .imgs_r{				/* 預覽圖 */
-	border:solid 4px #c5dfe6;
+	border:solid 4px #e8f5ff;
 }
 .imgs_r:hover,				/* 預覽圖指到 */
 .imgs_r_on{				/* 預覽圖已選 */
-	border:solid 4px #54e415;
+	border:solid 4px #5984ca;
 }
 #img_box>div>img{			/* 去掉右上角叉叉按鈕 */
 	display:none;
