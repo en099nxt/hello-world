@@ -365,7 +365,7 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#M_img').css({'border-radius':'','margin-right':'10px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});
 		});
 		$('.imgr8').click(function(){											//黑背景改淡(放棄因為會閃爍，其他黑背景也沒有一個改成功的，原因是點完消失後整個 DOM 都整個刪掉了，下次才又創新的出來)
-			$('#bg_pic').css('background-color','#def');
+			//$('#bg_pic').css('background-color','#def');
 		});
 
 		//電腦版網頁最底部資訊
