@@ -400,9 +400,10 @@ $('.price1').ready(function(){
 });
 
 //【加入會員頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.location.href=='http://www.shop2000.com.tw/淨水實業netwater/member'){
+if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/member'){
 	$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');	//邊框隱藏
 	$('.right_td .p_c3b').css('background','');										//內容區塊去背景
 	$('.right_td .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});		//整體
-	$('.right_td .p_c3b tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});			//標題
+	$('.right_td .p_c3b>table tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});			//第一區塊標題
+	$('.right_td .p_c3b>div').css({'font-size':'24px','color':'rgb(89,132,202)'});						//第二區塊標題
 }
