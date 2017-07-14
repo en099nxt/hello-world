@@ -246,7 +246,7 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 
 		//手機版商品分類頁
 		$('select[name="vorder_p"]').ready(function(){									//排序選單
-			$('select[name="vorder_p"]').css({'font-size':'22px','background-color':'#e8f5ff','width':'145px'});
+			$('select[name="vorder_p"]').css({'font-size':'16px','background-color':'#e8f5ff'});
 		});
 		$('#kw_page_top').ready(function(){										//商品列表上方的虛線去掉
 			$('#kw_page_top').parent().find('>div:nth-of-type(2)').css('background','url()');
