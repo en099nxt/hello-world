@@ -1,5 +1,6 @@
-const __Mobile_Style_NW__=($('.percent100').length>=1);		//【手機版專用】判斷是否有手機版 .percent100 存在
-const __Product_Page_NW__=($('.p_tiem').length>=1);		//【商品頁專用】判斷是否有商品頁才有的 .p_tiem 區塊存在
+const __Mobile_Style_NW__=($('.percent100').length>=1);																//【手機版專用】判斷是否有手機版 .percent100 存在
+const __Product_Page_NW__=($('.p_tiem').length>=1);																//【商品頁專用】判斷是否有商品頁才有的 .p_tiem 區塊存在
+const __Sign_Up_Page_NW__=(document.location.href=='http://netwater.shop2000.com.tw/member' || document.location.href=='http://www.shop2000.com.tw/淨水實業netwater/member')	//【加入會員頁專用】判斷網址是否是加入會員頁
 
 //【商品頁專用】for【電腦版】or【手機版】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(__Product_Page_NW__){																		//如果是商品頁
@@ -398,16 +399,10 @@ $('.price1').ready(function(){
 	$('.price1').css('color','red');
 });
 
-
-
-
-
-
+//【加入會員頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.location.href=='http://www.shop2000.com.tw/淨水實業netwater/member'){
 	$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');	//邊框隱藏
 	$('.right_td .p_c3b').css('background','');										//內容區塊去背景
 	$('.right_td .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});		//整體
 	$('.right_td .p_c3b tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});			//標題
 }
-
-
