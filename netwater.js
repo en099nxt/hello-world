@@ -198,6 +198,10 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 		});
 	});
 
+		$('select[name="vorder_p"]').ready(function(){									//排序選單
+			$('select[name="vorder_p"]').css({'font-size':'16px','background-color':'#e8f5ff'});
+		});
+
 	//商品列表預覽圖的樣式
 	$('.imgr8').ready(function(){
 		$('.imgr8').css('max-height','240px');
@@ -249,9 +253,6 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 		});
 
 		//手機版商品分類頁
-		$('select[name="vorder_p"]').ready(function(){									//排序選單
-			$('select[name="vorder_p"]').css({'font-size':'16px','background-color':'#e8f5ff'});
-		});
 		$('#kw_page_top').ready(function(){										//商品列表上方的虛線去掉
 			$('#kw_page_top').parent().find('>div:nth-of-type(2)').css('background','url()');
 		});
