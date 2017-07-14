@@ -46,6 +46,7 @@ if(__Product_Page_NW__){																		//如果是商品頁
 		$('#keyin_val').focus(function(){															//手機版的無法偵測到選擇選項時觸發選單整體被按到的事件，所以改為偵測欄位出現後成為焦點時
 			$('#ct_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
 			$('#ct_div>div>img').css('display','none');													//去掉右上角叉叉按鈕
+			$('#bg_hs').css('background-color','#bcd');													//黑背景改色
 		});
 	});
 
@@ -281,9 +282,9 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('.percent100 td:nth-child(1n+2) img').css('filter','invert(100%)');
 		});
 		$('.percent100').click(function(){
-			//黑背景高度拉高才不會捲軸下拉時破圖
+			//黑背景高度拉高才不會捲軸下拉時破圖、改色
 			$('#bg_hs').ready(function(){
-				$('#bg_hs').css('height','200%');
+				$('#bg_hs').css({'height':'200%','background-color':'#bcd'});
 			});
 
 			//以下是房子工具列
@@ -364,7 +365,7 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 		$('#M_img').ready(function(){											//大圖
 			$('#M_img').css({'border-radius':'','margin-right':'10px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});
 		});
-		$('.imgr8').click(function(){											//黑背景改淡
+		$('.imgr8').click(function(){											//黑背景改色
 			$('#bg_pic').css('background-color','#bcd');
 		});
 
