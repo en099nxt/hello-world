@@ -365,9 +365,9 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#M_img').css({'border-radius':'','margin-right':'10px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});
 		});
 		$('.imgr8').click(function(){											//黑背景
-			$('#img_box').css('display','none');
-			$('#bg_pic').css('display','none');
 			setTimeout(function(){
+				$('#img_box').css('display','none');
+				$('#bg_pic').css('display','none');
 				$('#bg_pic').css('opacity','0.3');
 				$('#img_box').fadeIn();
 				$('#bg_pic').fadeIn();
