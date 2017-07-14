@@ -366,7 +366,7 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 		});
 		$('.imgr8').click(function(){											//黑背景
 			$('#bg_pic').ready(function(){
-				$('#bg_pic').css('opacity','0.3');
+				$('#bg_pic').css({'opacity':'0.3','display':'none'});
 			});
 		});
 
