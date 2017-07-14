@@ -365,7 +365,9 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#M_img').css({'border-radius':'','margin-right':'10px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});
 		});
 		$('.imgr8').click(function(){											//黑背景
-			$('#bg_pic').css('opacity','0.3');
+			$('#bg_pic').ready(function(){
+				$('#bg_pic').css('opacity','0.3');
+			});
 		});
 
 		//電腦版網頁最底部資訊
