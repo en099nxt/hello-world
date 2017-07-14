@@ -355,8 +355,14 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 		});
 
 		//電腦版快速看商品圖樣式
-		$('#img_box').ready(function(){
-			$('#img_box').css({'border':'1px solid rgb(130, 166, 210)','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
+		$('#img_box').ready(function(){											//整體
+			$('#img_box').css({'border':'1px solid rgb(130, 166, 210)','background':'url(http://61.63.55.131/pattern/737/1.gif)','padding':'37px'});
+		});
+		$('#img_box>div>div').ready(function(){										//快速看圖標題
+			$('#img_box>div>div').css({'font-size':'24px','color':'#5984ca'});
+		});
+		$('##bg_pic').ready(function(){											//黑背景
+			$('##bg_pic').css('opacity','0.3');
 		});
 
 		//電腦版網頁最底部資訊
