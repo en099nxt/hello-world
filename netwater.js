@@ -361,6 +361,9 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 		$('#img_box>div>div').ready(function(){										//快速看圖標題
 			$('#img_box>div>div').css({'font-size':'24px','color':'#5984ca'});
 		});
+		$('#M_img').ready(function(){											//大圖
+			$('#img_box>div>div').css({'border-radius':'','margin-right':'10px'});
+		});
 		$('##bg_pic').ready(function(){											//黑背景
 			$('##bg_pic').css('opacity','0.3');
 		});
