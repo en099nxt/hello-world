@@ -457,7 +457,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/edm' || document.loc
 		$('#main_div .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});				//(同加入會員)整體
 	}
 }
-
+/*
 //【相關連結頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/weblink'){
 //>>>>>	//【通用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -478,3 +478,4 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 		$('#main_div .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});				//(同加入會員)整體
 	}
 }
+*/
