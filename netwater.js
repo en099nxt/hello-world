@@ -462,10 +462,11 @@ if(document.location.href=='http://netwater.shop2000.com.tw/edm' || document.loc
 if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/weblink'){
 //>>>>>	//【通用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.wl_box').css('background','url()');														//分隔線去掉
+		$('.wl_box').parent().css('background','#fff');
 	$('.wl_box>ul>div>a').css('font-style','italic');												//網址斜體
 	$('.p_c3>a>img').css('box-shadow','0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)');							//網站圖加陰影
 	$('.p_tb').ready(function(){
-		$('.p_tb').css({'box-shadow':'0 0 0 0 rgba(0,0,0,0)','margin-right':'20px'});								//網站圖去掉原本的陰影、不要太靠右
+		$('.p_tb').css({'box-shadow':'','margin-top':'15px','background':''});								//網站圖去掉原本的陰影、不要太靠右
 	});
 //>>>>>	//【電腦版專用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){												//如果是電腦版
