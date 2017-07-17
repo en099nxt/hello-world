@@ -411,5 +411,6 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 	$('.right_td .p_c3b>table>tbody>tr>td>div').css('border-bottom','0px');							//第一區塊標題下方去虛線
 	$('.right_td .p_c3b>div').css('border-bottom','0px');									//第二區塊標題下方去虛線
 	$('.table_mem th').css('background-color','#a6d3f6');									//表格標題背景改色
-	$('.table_mem td').css('border','0px');											//表格內容邊框去掉
+	$('.table_mem th').css('border','solid 3px #fff');									//表格標題邊框改
+	$('.table_mem td,.table_mem').css('border','0px');									//表格內容邊框去掉
 }
