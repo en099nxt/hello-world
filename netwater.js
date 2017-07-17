@@ -1,6 +1,6 @@
-const __Mobile_Style_NW__=($('.percent100').length>=1);																//【手機版專用】判斷是否有手機版 .percent100 存在
-const __Product_Page_NW__=($('.p_tiem').length>=1);																//【商品頁專用】判斷是否有商品頁才有的 .p_tiem 區塊存在
-const __Sign_Up_Page_NW__=(document.location.href=='http://netwater.shop2000.com.tw/member' || document.location.href=='http://www.shop2000.com.tw/淨水實業netwater/member')	//【加入會員頁專用】判斷網址是否是加入會員頁
+const __Mobile_Style_NW__=($('.percent100').length>=1);																				//【手機版專用】判斷是否有手機版 .percent100 存在
+const __Product_Page_NW__=($('.p_tiem').length>=1);																				//【商品頁專用】判斷是否有商品頁才有的 .p_tiem 區塊存在
+const __Sign_Up_Page_NW__=(document.location.href=='http://netwater.shop2000.com.tw/member' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/member')	//【加入會員頁專用】判斷網址是否是加入會員頁
 
 //【商品頁專用】for【電腦版】or【手機版】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(__Product_Page_NW__){																		//如果是商品頁
@@ -406,6 +406,10 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 	$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');	//邊框隱藏
 	$('.right_td .p_c3b').css('background','');										//內容區塊去背景
 	$('.right_td .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});		//整體
-	$('.right_td .p_c3b>table tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});			//第一區塊標題
-	$('.right_td .p_c3b>div').css({'font-size':'24px','color':'rgb(89,132,202)'});						//第二區塊標題
+	$('.right_td .p_c3b>table tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});			//電腦版第一區塊標題
+	$('.right_td .p_c3b>div').css({'font-size':'24px','color':'rgb(89,132,202)'});						//電腦版第二區塊標題
+	$('.right_td .p_c3b>table>tbody>tr>td>div').css('border-bottom','0px');							//第一區塊標題下方去虛線
+	$('.right_td .p_c3b>div').css('border-bottom','0px');									//第二區塊標題下方去虛線
+	$('.table_mem th').css('background-color','#a6d3f6');									//表格標題背景改色
+	$('.table_mem td').css('border','0px');											//表格內容邊框去掉
 }
