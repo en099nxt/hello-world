@@ -428,9 +428,10 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 		$('#main_div .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});		//整體
 		$('#main_div .p_c3b>table tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});			//第一區塊標題
 		$('#main_div .p_c3b>div').css({'font-size':'24px','color':'rgb(89,132,202)'});						//第二區塊標題
-		$('#main_div .p_c3b>table>tbody>tr:nth-of-type(1)>td>div').css({'border-bottom':'0px','padding-top':'27px'});		//第一區塊標題下方去虛線、上方加高 table:nth-of-type(2) 
-		$('#main_div .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});						//第二區塊標題下方去虛線、上方加高 table:nth-of-type(3) 
-		$('#main_div #email_mem').css('width','169px');										//防止手機看第二區塊寬度被拉長要限制 Email 欄位寬度
-		$('#main_div .table_mem input[name="tel"]').css('width','100px');							//防止手機看第二區塊寬度被拉長要限制電話欄位寬度
+		$('#main_div .p_c3b>table>tbody>tr:nth-of-type(1)>td>div').css({'border-bottom':'0px','padding-top':'27px'});		//第一區塊標題下方去虛線、上方加高 table:nth-of-type(2)
+		$('#main_div .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});						//第二區塊標題下方去虛線、上方加高 table:nth-of-type(3)
+		$('.fix_width').css('padding-bottom','30px');										//第一區塊內容底部拉高
+		$('#main_div #email_mem').css('width','190px');										//防止手機看第二區塊寬度被拉長要限制 Email 欄位寬度
+		$('#main_div .table_mem input[name="tel"]').css('width','120px');							//防止手機看第二區塊寬度被拉長要限制電話欄位寬度
 	}
 }
