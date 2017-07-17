@@ -481,6 +481,6 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');			//(同加入會員)邊框隱藏
 		$('#main_div .p_c3b').css('background','url()');											//(同加入會員)內容區塊去背景
 		//$('#main_div .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});				//(同加入會員)整體
-		$('.wl_box').css({'background':'#fff','padding':'10px'});										//各比背景
+		$('.wl_box').css({'background':'#fff','margin':'10px','width':'90%'});									//各筆背景
 	}
 }
