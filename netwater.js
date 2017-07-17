@@ -439,7 +439,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 if(document.location.href=='http://netwater.shop2000.com.tw/edm' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/edm'){
 //>>>>>	//【通用】of【電子報頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.p_c3b>table>tbody>tr:nth-of-type(5) input').attr('id','act1');								//訂閱按鈕透過掛上加入會員頁才有的按鈕 #act1 來套用樣式
-	$('.p_c3b>table>tbody>tr:nth-of-type(5) input').css('font-size','16px');							//訂閱按鈕樣式補充
+	$('.p_c3b>table>tbody>tr:nth-of-type(5) input').css({'font-size':'16px','margin-bottom':'30px');				//訂閱按鈕樣式補充
 //>>>>>	//【電腦版專用】of【電子報頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');	//(同加入會員)邊框隱藏
