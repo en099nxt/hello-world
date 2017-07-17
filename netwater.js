@@ -438,19 +438,20 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 //【電子報頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href=='http://netwater.shop2000.com.tw/edm' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/edm'){
 //>>>>>	//【通用】of【電子報頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	$('.p_c3b>table>tbody>tr:nth-of-type(5) input').attr('id','act1');								//訂閱按鈕透過掛上加入會員頁才有的按鈕 #act1 來套用樣式
-	$('.p_c3b>table>tbody>tr:nth-of-type(5) input').css({'font-size':'16px','margin-bottom':'30px'});				//訂閱按鈕樣式補充
+	$('.p_c3b>table>tbody>tr:nth-of-type(1)>td').css({'color':'rgb(89, 132, 202)','font-size':'24px','background-color':'','padding':'10px'});	//第一區塊的標題樣式
+	$('.p_c3b>table>tbody>tr:nth-of-type(5) input').attr('id','act1');										//訂閱按鈕透過掛上加入會員頁才有的按鈕 #act1 來套用樣式
+	$('.p_c3b>table>tbody>tr:nth-of-type(5) input').css({'font-size':'16px','margin-bottom':'10px'});						//訂閱按鈕樣式補充
 //>>>>>	//【電腦版專用】of【電子報頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是電腦版
-		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');	//(同加入會員)邊框隱藏
-		$('.right_td .p_c3b').css('background','url()');									//(同加入會員)內容區塊去背景
-		$('.right_td .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});		//(同加入會員)整體
+	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){												//如果是電腦版
+		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');			//(同加入會員)邊框隱藏
+		$('.right_td .p_c3b').css('background','url()');											//(同加入會員)內容區塊去背景
+		$('.right_td .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});				//(同加入會員)整體
 	}
 //>>>>>	//【手機版專用】of【電子報頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是手機版
-		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');						//(同加入會員)加背景
-		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');	//(同加入會員)邊框隱藏
-		$('#main_div .p_c3b').css('background','url()');									//(同加入會員)內容區塊去背景
-		$('#main_div .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});		//(同加入會員)整體
+	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){												//如果是手機版
+		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');								//(同加入會員)加背景
+		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');			//(同加入會員)邊框隱藏
+		$('#main_div .p_c3b').css('background','url()');											//(同加入會員)內容區塊去背景
+		$('#main_div .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});				//(同加入會員)整體
 	}
 }
