@@ -408,7 +408,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 	$('.table_mem th').css('background-color','#e8f5ff');										//表格標題背景改色
 	$('.table_mem th').css('border','solid 4px #fff');										//表格標題邊框改
 	$('.table_mem td,.table_mem').css('border','0px');										//表格內容邊框去掉
-	$('#act1').css('font-family','');								//加入會員按鈕 {'display':'',,'height':'39px'}
+	$('#act1').css('font-family','');												//加入會員按鈕 {'display':'',,'height':'39px'}
 //>>>>>	//【電腦版專用】of【加入會員頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');	//邊框隱藏
@@ -426,8 +426,8 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 		$('#main_div .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});		//整體
 		$('#main_div .p_c3b>table tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});			//第一區塊標題
 		$('#main_div .p_c3b>div').css({'font-size':'24px','color':'rgb(89,132,202)'});						//第二區塊標題
-		$('#main_div table:nth-of-type(2) .p_c3b>table>tbody>tr>td>div').css({'border-bottom':'0px','padding-top':'27px'});	//第一區塊標題下方去虛線、上方加高
-		$('#main_div table:nth-of-type(3) .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});			//第二區塊標題下方去虛線、上方加高
-		$('#main_div .table_mem input[name="tel"]').css('width','58%');								//防止第二區塊寬度被拉長要限制此欄位寬度
+		$('#main_div .p_c3b>table>tbody>tr:nth-of-type(1)>td>div').css({'border-bottom':'0px','padding-top':'27px'});		//第一區塊標題下方去虛線、上方加高 table:nth-of-type(2) 
+		$('#main_div .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});						//第二區塊標題下方去虛線、上方加高 table:nth-of-type(3) 
+		$('#main_div .table_mem input[name="tel"]').css('width','94px');							//防止第二區塊寬度被拉長要限制此欄位寬度
 	}
 }
