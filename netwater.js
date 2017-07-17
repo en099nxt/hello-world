@@ -405,6 +405,7 @@ $('.price1').ready(function(){
 if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/member'){
 //>>>>>	//【通用】of【加入會員頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');							//加背景
+	$('.p_c3b>table>tbody>tr:nth-of-type(2)>td').css('height','0px');								//第一區塊的標題跟內容中間的隱藏區高度砍掉
 	$('.table_mem th').css('background-color','#e8f5ff');										//表格標題背景改色
 	$('.table_mem th').css('border','solid 4px #fff');										//表格標題邊框改
 	$('.table_mem td,.table_mem').css('border','0px');										//表格內容邊框去掉
