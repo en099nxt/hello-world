@@ -438,7 +438,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 if(document.location.href=='http://netwater.shop2000.com.tw/edm' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/edm'){
 //>>>>>	//【通用】of【電子報頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.p_c3b>table>tbody>tr:nth-of-type(1)>td').css({'color':'rgb(89, 132, 202)','font-size':'24px','background-color':'','padding':'10px'});	//第一區塊的標題樣式
-	$('.p_c3b>table>tbody>tr:nth-of-type(1n+2) td,.p_c3b>table>tbody>tr:nth-of-type(1n+2) input').css.('font-size','16px');				//字體大小
+	$('.p_c3b>table>tbody>tr:nth-of-type(1n+2) td,.p_c3b>table>tbody>tr:nth-of-type(1n+2) input').css('font-size','16px');				//字體大小
 	$('.p_c3b input').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)'});						//輸入欄位樣式
 	$('.p_c3b>table>tbody>tr:nth-of-type(5) input').attr('id','act1');										//訂閱按鈕透過掛上加入會員頁才有的按鈕 #act1 來套用樣式
 	$('.p_c3b>table>tbody>tr:nth-of-type(5) input').css({'font-size':'16px','margin-bottom':'10px'});						//訂閱按鈕樣式補充
