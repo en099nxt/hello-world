@@ -403,6 +403,13 @@ $('.price1').ready(function(){
 
 //【加入會員頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/member'){
+//>>>>>	//【通用】of【加入會員頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');							//加背景
+	$('.table_mem th').css('background-color','#e8f5ff');										//表格標題背景改色
+	$('.table_mem th').css('border','solid 4px #fff');										//表格標題邊框改
+	$('.table_mem td,.table_mem').css('border','0px');										//表格內容邊框去掉
+	$('#act1').css({'font-family':''});								//加入會員按鈕 'display':'',,'height':'39px'
+//>>>>>	//【電腦版專用】of【加入會員頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');	//邊框隱藏
 		$('.right_td .p_c3b').css('background','');										//內容區塊去背景
@@ -412,6 +419,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 		$('.right_td .p_c3b>table>tbody>tr>td>div').css({'border-bottom':'0px','padding-top':'27px'});				//第一區塊標題下方去虛線、上方加高
 		$('.right_td .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});						//第二區塊標題下方去虛線、上方加高
 	}
+//>>>>>	//【手機版專用】of【加入會員頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是手機版
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');	//邊框隱藏
 		$('#main_div .p_c3b').css('background','');										//內容區塊去背景
@@ -421,8 +429,4 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 		$('#main_div .p_c3b>table>tbody>tr>td>div').css({'border-bottom':'0px','padding-top':'27px'});				//第一區塊標題下方去虛線、上方加高
 		$('#main_div .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});						//第二區塊標題下方去虛線、上方加高
 	}
-	$('.table_mem th').css('background-color','#e8f5ff');										//表格標題背景改色
-	$('.table_mem th').css('border','solid 4px #fff');										//表格標題邊框改
-	$('.table_mem td,.table_mem').css('border','0px');										//表格內容邊框去掉
-	$('#act1').css({'font-family':''});								//加入會員按鈕 'display':'',,'height':'39px'
 }
