@@ -429,8 +429,8 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 		$('#main_div .p_c3b>table>tbody>tr:nth-of-type(1)>td>div').css({'border-bottom':'0px','padding-top':'27px'});					//第一區塊標題下方去虛線、上方加高
 		$('#main_div .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});									//第二區塊標題下方去虛線、上方加高
 		$('.fix_width').css('padding-bottom','30px');													//第一區塊內容底部拉高
-		$('#main_div #email_mem').css('width','111px');													//防止手機看第二區塊寬度被拉長要限制 Email 欄位寬度
-		$('#main_div .table_mem input[name="tel"]').css('width','130px');										//防止手機看第二區塊寬度被拉長要限制電話欄位寬度
+		$('#main_div #email_mem').css('width','171px');													//防止手機看第二區塊寬度被拉長要限制 Email 欄位寬度
+		$('#main_div .table_mem input[name="tel"]').css('width','135px');										//防止手機看第二區塊寬度被拉長要限制電話欄位寬度
 	}
 }
 
