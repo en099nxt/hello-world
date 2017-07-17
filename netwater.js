@@ -464,7 +464,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 	$('.wl_box').css('background','url()');														//分隔線去掉
 	$('.wl_box>ul>div>a').css('font-style','italic');												//網址斜體
 	$('.p_c3>a>img').css('box-shadow','0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)');							//網站圖加陰影
-	$('.p_tb').css('box-shadow','0 0 0 0 rgba(0,0,0,0)');												//網站圖去掉原本的陰影
+	$('.p_tb').css({'box-shadow':'0 0 0 0 rgba(0,0,0,0)','margin-right':'30px'});									//網站圖去掉原本的陰影、不要太靠右
 //>>>>>	//【電腦版專用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){												//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');			//(同加入會員)邊框隱藏
