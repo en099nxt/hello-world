@@ -408,6 +408,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.
 	$('.table_mem th').css('background-color','#e8f5ff');										//表格標題背景改色
 	$('.table_mem th').css('border','solid 4px #fff');										//表格標題邊框改
 	$('.table_mem td,.table_mem').css('border','0px');										//表格內容邊框去掉
+	$('.table_mem input,.table_mem select').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)'});	//選單與輸入欄位樣式
 	$('#act1').css('font-family','');												//加入會員按鈕 {'display':'',,'height':'39px'}
 //>>>>>	//【電腦版專用】of【加入會員頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是電腦版
