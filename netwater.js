@@ -461,10 +461,10 @@ if(document.location.href=='http://netwater.shop2000.com.tw/edm' || document.loc
 //【相關連結頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/weblink'){
 //>>>>>	//【通用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	$('.wl_box').css('background','url()');																	//分隔線去掉
-	$('.wl_box>ul>li>a').css('text-decoration','none');															//連結標題去底線
+	//$('.wl_box').css('background','url()');																	//分隔線去掉
+	$('.wl_box>ul>li').css('text-decoration','none');															//連結標題去底線
 	$('.wl_box>ul>div>a').css('font-style','italic');															//網址斜體
-	$('.p_c3>cboxElement>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin-top':'15px','padding':'7px','background':'#fff'});	//網站圖樣式
+	$('.p_c3>.cboxElement>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin-top':'15px','padding':'7px','background':'#fff'});	//網站圖樣式
 	//$('.p_tb').ready(function(){
 	//	$('.p_tb').css({'box-shadow':'','margin-top':'15px','background':''});										//網站圖去掉原本的陰影、不要太靠右
 	//});
