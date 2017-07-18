@@ -524,7 +524,7 @@ else if(document.location.href=='http://netwater.shop2000.com.tw/message/addmsg'
 if(document.location.href=='http://netwater.shop2000.com.tw/faq' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/faq'){
 //>>>>>	//【通用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.faq_box,.faq_title').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','background':'#fff','padding':'20px'});	//各題區塊樣式
-	$('.faq_box>ul>li,.faq_title>ul>li').css('color','#2977d2');											//各題標題顏色
+	$('.faq_box>ul>li,.faq_title>ul>li>a').css('color','#2977d2');											//各題標題顏色
 	$('.faq_box>ul').css('margin-top','7px');													//各題提高度縮小
 	$('.to_top>a').css({'text-decoration':'none','margin-top':'20px'});										//各題右下角回到最上頁文字樣式
 //>>>>>	//【電腦版專用】of【留言板留言頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
