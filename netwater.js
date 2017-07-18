@@ -555,8 +555,8 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 		$('.right_td .p_c3b').css('background','url()');									//(同加入會員)內容區塊去背景
 		$('.right_td .p_c1,.right_td .p_c2,.right_td .p_c4,.right_td .p_c5,.right_td .p_c6').css('display','none');		//網站圖邊框隱藏
 		$('.right_td .p_c3').css('background','url()');										//網站圖邊框隱藏
-		$('.n_title>a').ready(function(){
-			$('.n_title>a,.n_title>a:hover').css({'text-decoration':'none !important','color':'rgb(41,119,210) !important'});					//消息標題樣式
+		$('.n_title a').ready(function(){
+			$('.n_title a,.n_title a:hover').css({'text-decoration':'none !important','color':'rgb(41,119,210) !important'});					//消息標題樣式
 		});
 	}
 //>>>>>	//【手機版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
