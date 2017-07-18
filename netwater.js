@@ -492,7 +492,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/message' || document
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){																				//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');											//(同加入會員)邊框隱藏
 		$('.right_td .p_c3b').css('background','url()');																			//(同加入會員)內容區塊去背景
-		$('.pt9>select').css('padding-bottom','10px');																					//選單拉高比較整齊(跟手機版只差1px)
+		$('.pt9>select').css('padding-bottom','10px');																				//選單拉高比較整齊(跟手機版只差1px)
 		$('.left2>a').css('word-break','break-all');																				//登入管理員看的時候留言者網址太長自動換行
 	}
 //>>>>>	//【手機版專用】of【留言板頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -501,7 +501,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/message' || document
 		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');																//(同加入會員)加背景
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');											//(同加入會員)邊框隱藏
 		$('#main_div .p_c3b').css('background','url()');																			//(同加入會員)內容區塊去背景
-		$('.pt9>select').css('padding-bottom','9px');																					//選單拉高比較整齊(跟電腦版只差1px)
+		$('.pt9>select').css('padding-bottom','9px');																				//選單拉高比較整齊(跟電腦版只差1px)
 	}
 }
 //【留言板留言頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
