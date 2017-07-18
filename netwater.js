@@ -479,6 +479,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');						//(同加入會員)邊框隱藏
 		$('#main_div .p_c3b').css('background','url()');														//(同加入會員)內容區塊去背景
 		$('.wl_box').css({'background':'url()','margin':'10px','width':'90%'});												//各筆樣式
+		$('.p_tb').css('float','');																	//網站圖放上面比較好看
 	}
 }
 
@@ -486,10 +487,8 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 if(document.location.href=='http://netwater.shop2000.com.tw/message' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/message'){
 //>>>>>	//【通用】of【留言板頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.msg_box').css({'background':'#fff','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin':'7px','margin-bottom':'14px','border-radius':'0px','width':'auto','padding':'13px'});	//各筆樣式
-	//$('.pt9 input').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)'});						//輸入欄位樣式
-	$('.pt9 input,.pt9 select').attr('id','act1');										//選單與輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
-	//$('.pt9>table>tbody>tr:nth-of-type(5) input').css({'font-size':'16px','margin-bottom':'10px'});						//訂閱按鈕樣式補充
-	$('.pt9 input,.pt9 select').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});	//選單與輸入欄位樣式補充
+	$('.pt9 input,.pt9 select').attr('id','act1');																					//選單與輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
+	$('.pt9 input,.pt9 select').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});										//選單與輸入欄位樣式補充
 //>>>>>	//【電腦版專用】of【留言板頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){																				//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');											//(同加入會員)邊框隱藏
@@ -497,6 +496,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/message' || document
 	}
 //>>>>>	//【手機版專用】of【留言板頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){																				//如果是手機版
+		$('input[name="kw"]').css('width','80px');																				//輸入關鍵字搜尋欄位改短一點比較好看
 		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');																//(同加入會員)加背景
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');											//(同加入會員)邊框隱藏
 		$('#main_div .p_c3b').css('background','url()');																			//(同加入會員)內容區塊去背景
