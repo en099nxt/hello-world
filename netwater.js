@@ -484,7 +484,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/message' || document
 	$('.msg_box').css({'background':'#fff','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin':'7px','margin-bottom':'14px','border-radius':'0px','width':'auto','padding':'13px'});	//各筆樣式
 	$('.pt9>input,.pt9>select').attr('id','act1');																					//選單與輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
 	$('.pt9>input,.pt9>select').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});										//選單與輸入欄位樣式補充
-	$('.pt9>select').css('padding-bottom','10px');																					//選單拉高比較整齊
+	$('.pt9>select').css('padding-bottom','9px');																					//選單拉高比較整齊
 	$('.pt11').css({'font-size':'23px','color':'rgb(89,132,202)','font-style':'italic','font-family':'微軟正黑體'});												//留言者名樣式
 	$('.msg_ans,.msg_ans2,.msg_p_ask').css('font-size','16px');																			//留言板小字放大
 	$('.msg_p_ask').css('color','#1cabda');																						//詢問商品字色
