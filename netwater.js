@@ -46,9 +46,6 @@ if(__Product_Page_NW__){																		//如果是商品頁
 		$('#keyin_val').focus(function(){															//手機版的無法偵測到選擇選項時觸發選單整體被按到的事件，所以改為偵測欄位出現後成為焦點時
 			$('#ct_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
 			$('#ct_div>div>img').css('display','none');													//去掉右上角叉叉按鈕
-			//$('#bg_hs').ready(function(){															//黑背景改色(失敗，大概又要用計時器才能成功)
-			//	$('#bg_hs').css('background-color','#bcd');
-			//});
 		});
 	});
 
@@ -374,9 +371,6 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#previous_p').css({'font-size':'17px','color':'#5984ca'});
 			$('#next_p').css({'font-size':'17px','color':'#5984ca'});
 		});
-		//$('.imgr8').click(function(){											//黑背景改色(不好看取消)
-		//	$('#bg_pic').css('background-color','#bcd');
-		//});
 
 		//電腦版網頁最底部資訊
 		$('#homebt').ready(function(){
