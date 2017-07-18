@@ -524,6 +524,7 @@ else if(document.location.href=='http://netwater.shop2000.com.tw/message/addmsg'
 if(document.location.href=='http://netwater.shop2000.com.tw/faq' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/faq'){
 //>>>>>	//【通用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.faq_box').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','background':'#fff'});
+	$('.faq_box>ul>ui').css('color','#2977d2');
 //>>>>>	//【電腦版專用】of【留言板留言頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){															//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');						//(同加入會員)邊框隱藏
