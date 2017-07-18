@@ -485,7 +485,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 }
 
 //【留言板頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-if(document.location.href=='http://netwater.shop2000.com.tw/message' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/message'){
+if(document.location.href=='http://netwater.shop2000.com.tw/message' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/message' || document.location.href=='http://netwater.shop2000.com.tw/message/addmsg' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/message/addmsg'){
 //>>>>>	//【通用】of【留言板頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.msg_box').css({'background':'#fff','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin':'7px','margin-bottom':'14px','border-radius':'0px','width':'auto','padding':'13px'});	//各筆樣式
 	$('.pt9>input,.pt9>select').attr('id','act1');																					//選單與輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
@@ -499,7 +499,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/message' || document
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){																				//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');											//(同加入會員)邊框隱藏
 		$('.right_td .p_c3b').css('background','url()');																			//(同加入會員)內容區塊去背景
-		$('.left2>a').css('word-break':'break-all');																				//登入管理員看的時候留言者網址太長自動換行
+		$('.left2>a').css('word-break','break-all');																				//登入管理員看的時候留言者網址太長自動換行
 	}
 //>>>>>	//【手機版專用】of【留言板頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){																				//如果是手機版
