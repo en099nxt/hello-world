@@ -397,34 +397,34 @@ $('.price1').ready(function(){
 //【加入會員頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href=='http://netwater.shop2000.com.tw/member' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/member'){
 //>>>>>	//【通用】of【加入會員頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	$('.p_c3b>table>tbody>tr:nth-of-type(2)>td').css('height','0px');											//第一區塊的標題跟內容中間的隱藏區高度砍掉
-	$('.table_mem th').css({'background-color':'#e8f5ff','border':'solid 4px #fff','font-size':'16px'});							//表格標題樣式
-	$('.table_mem td,.table_mem').css({'border':'0px','font-size':'16px'});											//表格內容樣式
-	$('.table_mem input,.table_mem select').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});	//選單與輸入欄位樣式
-	$('#act1').css('font-family','');															//加入會員按鈕
+	$('.p_c3b>table>tbody>tr:nth-of-type(2)>td').css('height','0px');													//第一區塊的標題跟內容中間的隱藏區高度砍掉
+	$('.table_mem th').css({'background-color':'#e8f5ff','border':'solid 4px #fff','font-size':'16px'});									//表格標題樣式
+	$('.table_mem td,.table_mem').css({'border':'0px','font-size':'16px'});													//表格內容樣式
+	$('.table_mem input,.table_mem select,.table_mem textarea').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});	//選單與輸入欄位樣式
+	$('#act1').css('font-family','');																	//加入會員按鈕
 //>>>>>	//【電腦版專用】of【加入會員頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){													//如果是電腦版
-		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');				//邊框隱藏
-		$('.right_td .p_c3b').css('background','url()');												//邊框隱藏
-		$('.right_td .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});					//區塊
-		$('.right_td .p_c3b>table tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});						//第一區塊標題
-		$('.right_td .p_c3b>div').css({'font-size':'24px','color':'rgb(89,132,202)'});									//第二區塊標題
-		$('.right_td .p_c3b>table>tbody>tr:nth-of-type(1)>td>div').css({'border-bottom':'0px','padding-top':'27px'});					//第一區塊標題下方去虛線、上方加高
-		$('.right_td .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});									//第二區塊標題下方去虛線、上方加高
+	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){															//如果是電腦版
+		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');						//邊框隱藏
+		$('.right_td .p_c3b').css('background','url()');														//邊框隱藏
+		$('.right_td .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});							//區塊
+		$('.right_td .p_c3b>table tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});								//第一區塊標題
+		$('.right_td .p_c3b>div').css({'font-size':'24px','color':'rgb(89,132,202)'});											//第二區塊標題
+		$('.right_td .p_c3b>table>tbody>tr:nth-of-type(1)>td>div').css({'border-bottom':'0px','padding-top':'27px'});							//第一區塊標題下方去虛線、上方加高
+		$('.right_td .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});											//第二區塊標題下方去虛線、上方加高
 	}
 //>>>>>	//【手機版專用】of【加入會員頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){													//如果是手機版
-		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');									//加背景
-		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');				//邊框隱藏
-		$('#main_div .p_c3b').css('background','url()');												//邊框隱藏
-		$('#main_div .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});					//區塊
-		$('#main_div .p_c3b>table tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});						//第一區塊標題
-		$('#main_div .p_c3b>div').css({'font-size':'24px','color':'rgb(89,132,202)'});									//第二區塊標題
-		$('#main_div .p_c3b>table>tbody>tr:nth-of-type(1)>td>div').css({'border-bottom':'0px','padding-top':'27px'});					//第一區塊標題下方去虛線、上方加高
-		$('#main_div .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});									//第二區塊標題下方去虛線、上方加高
-		$('.fix_width').css('padding-bottom','30px');													//第一區塊內容底部拉高
-		$('#main_div #email_mem').css('width','171px');													//防止手機看第二區塊寬度被拉長要限制 Email 欄位寬度
-		$('#main_div .table_mem input[name="tel"]').css('width','135px');										//防止手機看第二區塊寬度被拉長要限制電話欄位寬度
+	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){															//如果是手機版
+		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');											//加背景
+		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');						//邊框隱藏
+		$('#main_div .p_c3b').css('background','url()');														//邊框隱藏
+		$('#main_div .p_tb').css({'background':'#fff','box-shadow':'rgba(51,51,102,0.498039) 0 3px 17px -4px'});							//區塊
+		$('#main_div .p_c3b>table tr:nth-of-type(1) div').css({'font-size':'24px','color':'rgb(89,132,202)'});								//第一區塊標題
+		$('#main_div .p_c3b>div').css({'font-size':'24px','color':'rgb(89,132,202)'});											//第二區塊標題
+		$('#main_div .p_c3b>table>tbody>tr:nth-of-type(1)>td>div').css({'border-bottom':'0px','padding-top':'27px'});							//第一區塊標題下方去虛線、上方加高
+		$('#main_div .p_c3b>div').css({'border-bottom':'0px','padding-top':'27px'});											//第二區塊標題下方去虛線、上方加高
+		$('.fix_width').css('padding-bottom','30px');															//第一區塊內容底部拉高
+		$('#main_div #email_mem').css('width','171px');															//防止手機看第二區塊寬度被拉長要限制 Email 欄位寬度
+		$('#main_div .table_mem input[name="tel"]').css('width','135px');												//防止手機看第二區塊寬度被拉長要限制電話欄位寬度
 	}
 }
 
@@ -509,9 +509,9 @@ else if(document.location.href=='http://netwater.shop2000.com.tw/message/addmsg'
 	//手機版沒有底部區塊什麼也沒辦法做
 //>>>>>	//【電腦版專用】of【留言板留言頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){																				//如果是電腦版
-		$('.right_td>div').css({'border-radius':'','border':'','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});																		//留言區塊整體樣式
+		$('.right_td>div').css({'border-radius':'','border':'0px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','background-color':'#fff'});						//留言區塊整體樣式
 		$('.right_td>div>form>div').css({'font-size':'24px','color':'rgb(89, 132, 202)','padding-top':'27px'});													//留言區標題樣式
-		$('.right_td>div').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)'});												//輸入欄位樣式
+		$('.right_td>div input,.right_td>div textarea').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});						//輸入欄位樣式
 	}
 //>>>>>	//【手機版專用】of【留言板留言頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){																				//如果是手機版
