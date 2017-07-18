@@ -464,7 +464,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 	//$('.wl_box').css('background','url()');																	//分隔線去掉
 	$('.wl_box>ul>li').css('text-decoration','none');															//連結標題去底線
 	$('.wl_box>ul>div>a').css('font-style','italic');															//網址斜體
-	$('.p_c3>.cboxElement>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin-top':'15px','padding':'7px','background':'#fff'});	//網站圖樣式
+	$('.p_c3>a>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin-top':'15px','padding':'7px','background':'#fff'});		//網站圖樣式
 //>>>>>	//【電腦版專用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){															//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');						//(同加入會員)邊框隱藏
@@ -478,13 +478,14 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');											//(同加入會員)加背景
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');						//(同加入會員)邊框隱藏
 		$('#main_div .p_c3b').css('background','url()');														//(同加入會員)內容區塊去背景
-		$('.wl_box').css({'background':'url()','margin':'10px','width':'90%'});												//各筆背景
+		$('.wl_box').css({'background':'url()','margin':'10px','width':'90%'});												//各筆樣式
 	}
 }
 
 //【留言板頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href=='http://netwater.shop2000.com.tw/message' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/message'){
 //>>>>>	//【通用】of【留言板頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	$('.msg_box').css({'background-color':'#fff','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin':'7px','border-radius':'0px'});		//各筆樣式
 //>>>>>	//【電腦版專用】of【留言板頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){															//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');						//(同加入會員)邊框隱藏
