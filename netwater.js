@@ -479,7 +479,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');						//(同加入會員)邊框隱藏
 		$('#main_div .p_c3b').css('background','url()');														//(同加入會員)內容區塊去背景
 		$('.wl_box').css({'background':'url()','width':'','padding':''});												//各筆樣式
-		$('.wl_box>ul>li').css({'list-style':'none','text-align':'center'});												//各筆連結去掉地球小圖示並置中
+		$('.wl_box>ul>li').css({'list-style':'none','text-align':'center','text-indent':'-30px'});									//各筆連結去掉地球小圖示並置中
 		$('.p_tb').css({'float':'','margin':''});															//網站圖放上面置中
 	}
 }
