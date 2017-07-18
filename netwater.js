@@ -512,6 +512,7 @@ else if(document.location.href=='http://netwater.shop2000.com.tw/message/addmsg'
 		$('.right_td>div').css({'border-radius':'','border':'0px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','background-color':'#fff'});						//留言區塊整體樣式
 		$('.right_td>div>form>div').css({'font-size':'24px','color':'rgb(89, 132, 202)','padding-top':'27px'});													//留言區標題樣式
 		$('.right_td>div input,.right_td>div textarea').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});						//輸入欄位樣式
+		$('.right_td>div>form>input').attr('id','act1');																			//按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
 	}
 //>>>>>	//【手機版專用】of【留言板留言頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){																				//如果是手機版
