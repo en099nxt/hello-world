@@ -547,6 +547,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 	$('.pt9').css({'color':'rgb(41, 119, 210)','font-size':'13pt'})									//輸入欄位前文字樣式
 	$('.pt9>input').attr('id','act1');												//輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
 	$('.pt9>input').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});	//輸入欄位樣式補充
+	$('.imgr8').css({'border-radius':'','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});			//圖片樣式
 //>>>>>	//【電腦版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');	//(同加入會員)邊框隱藏
@@ -559,5 +560,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');						//(同加入會員)加背景
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');	//(同加入會員)邊框隱藏
 		$('#main_div .p_c3b').css('background','url()');									//(同加入會員)內容區塊去背景
+		$('.n_tb').css('background-color','#e8f6ff');										//消息標題樣式
+		$('.n_title>a').css({'text-decoration':'none','color':'#000'});								//消息標題樣式
 	}
 }
