@@ -557,7 +557,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 		$('.right_td .p_c3').css('background','url()');										//網站圖邊框隱藏
 		setTimeout(function(){
 			$('.n_title>a,.n_title>a:hover').css({'text-decoration':'none !important','color':'rgb(41,119,210) !important'});					//消息標題樣式
-		},100);
+		},1000);
 	}
 //>>>>>	//【手機版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是手機版
