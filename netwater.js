@@ -479,7 +479,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');						//(同加入會員)邊框隱藏
 		$('#main_div .p_c3b').css('background','url()');														//(同加入會員)內容區塊去背景
 		$('.wl_box').css({'background':'url()','width':'','padding':''});												//各筆樣式
-		$('.wl_box>ul>li').css({'list-style':'none','text-align':'center','text-indent':'-30px'});									//各筆連結去掉地球小圖示並置中
+		$('.wl_box>ul>li').css({'list-style':'none','text-align':'center','text-indent':'-35px'});									//各筆連結去掉地球小圖示並置中
 		$('.p_tb').css({'float':'','margin':''});															//網站圖放上面置中
 	}
 }
@@ -490,6 +490,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/message' || document
 	$('.msg_box').css({'background':'#fff','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin':'7px','margin-bottom':'14px','border-radius':'0px','width':'auto','padding':'13px'});	//各筆樣式
 	$('.pt9 input,.pt9 select').attr('id','act1');																					//選單與輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
 	$('.pt9 input,.pt9 select').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});										//選單與輸入欄位樣式補充
+	$('.pt11').css({'font-size':'23px','color':'rgb(89,132,202)','font-style':'italic','font-family':'微軟正黑體'});												//留言者名樣式
 //>>>>>	//【電腦版專用】of【留言板頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){																				//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');											//(同加入會員)邊框隱藏
