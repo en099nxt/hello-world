@@ -573,3 +573,4 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 		$('.n_title>a').css({'text-decoration':'none','color':'#000'});								//消息標題樣式
 	}
 }
+//
