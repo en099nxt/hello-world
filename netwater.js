@@ -501,7 +501,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/message' || document
 		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');																//(同加入會員)加背景
 		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');											//(同加入會員)邊框隱藏
 		$('#main_div .p_c3b').css('background','url()');																			//(同加入會員)內容區塊去背景
-		$('.pt9>select').css('padding-bottom','9px');																				//選單拉高比較整齊(跟電腦版只差1px)
+		$('.pt9>select').css('padding-bottom','7px');																				//選單拉高比較整齊(跟電腦版只差1px)
 	}
 }
 //【留言板留言頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
