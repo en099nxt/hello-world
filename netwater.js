@@ -595,11 +595,20 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 if(document.location.href.substring(0,37)=='http://netwater.shop2000.com.tw/news/' || document.location.href.substring(0,77)=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/news/'){
 //>>>>>	//【通用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.n_title').ready(function(){
-		$('.p_tb').css('background','url(http://61.63.55.131/pattern/737/1.gif)');							//(同加入會員)加背景
+		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');							//(同加入會員)加背景
 		$('.p_c1b,.p_c2b,.p_c4b,.p_c5b,.p_c6b').css('display','none');									//邊框隱藏
 		$('.p_c3b').css('background','url()');												//內容區塊去背
 		$('.n_title>div').css({'color':'rgb(41,119,210)','font-family':'新細明體','text-shadow':'1px 1px #fff','font-size':'20px'});	//消息標題樣式
 		$('.n_title').css('padding','0');												//消息標題樣式
-		$('.p_c3b>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19),'max-width':'100%');		//消息圖樣式
+		$('.p_c3b>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19),'max-width':'100%'});		//消息圖樣式
+
+		//手機版商品頁橫幅、網站名稱(手機版專用 of 商品頁專用)
+		$('.percent100>table>tbody>tr>td:nth-of-type(2)').ready(function(){
+			$('.percent100>table>tbody>tr>td:nth-of-type(1)>img').attr('src','http://61.63.55.134/29956/self/j20170704113027.jpg');
+			$('.percent100>table>tbody>tr>td:nth-of-type(1)>img').css('padding-top','4px');
+			$('.percent100>table>tbody>tr>td:nth-of-type(2)').css({'background':'#e8f5ff','border-bottom':'1px solid #fff'});
+			$('.percent100>table>tbody>tr>td:nth-of-type(2)>div').css({'color':'#000','text-shadow':'rgb(255, 255, 255) 2px 2px 0px','width':'','padding-top':'9px'});
+			$('.percent100>table>tbody>tr>td:nth-of-type(2)>div').html('<marquee loop=0 behavior=slide>晉歡淨水 Jin Huan Water</marquee>');
+		});
 	});
 }
