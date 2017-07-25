@@ -595,7 +595,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 if(document.location.href.substring(0,37)=='http://netwater.shop2000.com.tw/news/' || document.location.href.substring(0,77)=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/news/'){
 //>>>>>	//【通用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.n_title').ready(function(){
-		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');							//(同加入會員)加背景
+		$('.p_tb').css('background','url(http://61.63.55.131/pattern/737/1.gif)');							//(同加入會員)加背景
 		$('.p_c1b,.p_c2b,.p_c4b,.p_c5b,.p_c6b').css('display','none');									//邊框隱藏
 		$('.p_c3b').css('background','url()');												//內容區塊去背
 		$('.n_title>div').css({'color':'rgb(41,119,210)','font-family':'新細明體','text-shadow':'1px 1px #fff','font-size':'20px'});	//消息標題樣式
