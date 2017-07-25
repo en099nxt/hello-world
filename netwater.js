@@ -457,8 +457,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 //>>>>>	//【通用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.wl_box').css('background','url()');																	//分隔線去掉
 	$('.wl_box>ul>li>a').css('text-decoration','none');															//連結標題去底線
-$('.wl_box>ul>li>a:hover').css('font-weight','bold');
-	$('.wl_box>ul>div>a').css({'font-style':'italic'});													//網址斜體 (還是隱藏好了)
+	//$('.wl_box>ul>div>a').css({'font-style':'italic','display':'none'});													//網址斜體 (還是隱藏好了)
 	$('.p_c3>a>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','margin-top':'15px','padding':'10px','background':'#fff'});		//網站圖樣式
 //>>>>>	//【電腦版專用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){															//如果是電腦版
@@ -467,6 +466,7 @@ $('.wl_box>ul>li>a:hover').css('font-weight','bold');
 		$('.right_td .p_c1,.right_td .p_c2,.right_td .p_c4,.right_td .p_c5,.right_td .p_c6').css('display','none');							//網站圖邊框隱藏
 		$('.right_td .p_c3').css('background','url()');															//網站圖邊框隱藏
 		$('.p_c3>a>img').css('margin-right','20px');															//網站圖再左移
+		$('.wl_box>ul>div>a').css('font-style','italic');														//網址斜體
 	}
 //>>>>>	//【手機版專用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){															//如果是手機版
@@ -476,6 +476,7 @@ $('.wl_box>ul>li>a:hover').css('font-weight','bold');
 		$('.wl_box').css({'background':'url()','width':'','padding':''});												//各筆樣式
 		$('.wl_box>ul>li').css({'list-style':'none','text-align':'center','text-indent':'-35px'});									//各筆連結去掉地球小圖示並置中
 		$('.p_tb').css({'float':'','margin':''});															//網站圖放上面置中
+		$('.wl_box>ul>div>a').css('display','none');															//網址隱藏
 	}
 }
 
@@ -548,36 +549,29 @@ if(document.location.href=='http://netwater.shop2000.com.tw/faq' || document.loc
 //【消息頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/news'){
 //>>>>>	//【通用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	//$('.pt9').css({'color':'rgb(41, 119, 210)','font-size':'20px','font-family':'微軟正黑體'})					//輸入欄位前文字樣式 (還是隱藏好了)
-	$('.pt9').html('<input type=text name=kw><input style="font-size:9pt;" type=submit name=act1 value=查詢>');			//輸入欄位前文字隱藏
-	$('.pt9>input').attr('id','act1');												//輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
-	$('.pt9>input').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});	//輸入欄位樣式補充
-	$('.pt9>input:nth-of-type(1)').css('margin-right','3px');									//輸入欄位與按鈕之間空格
-	$('.imgr8').css({'border-radius':'0px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});		//圖片樣式
+	//$('.pt9').css({'color':'rgb(41, 119, 210)','font-size':'20px','font-family':'微軟正黑體'})									//輸入欄位前文字樣式 (還是隱藏好了)
+	$('.pt9').html('<input type=text name=kw><input style="font-size:9pt;" type=submit name=act1 value=查詢>');							//輸入欄位前文字隱藏
+	$('.pt9>input').attr('id','act1');																//輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
+	$('.pt9>input').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});					//輸入欄位樣式補充
+	$('.pt9>input:nth-of-type(1)').css('margin-right','3px');													//輸入欄位與按鈕之間空格
+	$('.imgr8').css({'border-radius':'0px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});						//圖片樣式
 //>>>>>	//【電腦版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是電腦版
-		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');	//(同加入會員)邊框隱藏
-		$('.right_td .p_c3b').css('background','url()');									//(同加入會員)內容區塊去背景
-		$('.right_td .p_c1,.right_td .p_c2,.right_td .p_c4,.right_td .p_c5,.right_td .p_c6').css('display','none');		//網站圖邊框隱藏
-		$('.right_td .p_c3').css('background','url()');										//網站圖邊框隱藏
-		$('.n_title').css('padding','0');											//消息標題樣式
-//$('form[name="form1"]').ready(function(){
-	$('table.news_cont>tbody>tr>td:nth-of-type(1)').css('display','none');
-	
-//$('table.news_cont>tbody>tr>td:nth-of-type(2)').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','background-color':'#fff'});
-
-//});
-		//$('form[name="form1"]').ready(function(){
-/**？*/			$('td.n_title>a').css({'text-decoration':'none','color':'rgb(41,119,210)','font-family':'新細明體','text-shadow':'1px 1px #fff','font-size':'20px'});	//消息標題樣式 (一直不成功，為什麼？)
-			$('span.n_date').css('float','right;');
-		//});
+	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){														//如果是電腦版
+		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');					//(同加入會員)邊框隱藏
+		$('.right_td .p_c3b').css('background','url()');													//(同加入會員)內容區塊去背景
+		$('.right_td .p_c1,.right_td .p_c2,.right_td .p_c4,.right_td .p_c5,.right_td .p_c6').css('display','none');						//消息圖邊框隱藏
+		$('.right_td .p_c3').css('background','url()');														//消息圖邊框隱藏
+		$('table.news_cont>tbody>tr>td:nth-of-type(1)').css('display','none');											//消息圖置中
+		$('.n_title').css('padding','0');															//消息標題樣式
+		$('td.n_title>a').css({'text-decoration':'none','color':'rgb(41,119,210)','font-family':'新細明體','text-shadow':'1px 1px #fff','font-size':'20px'});	//消息標題樣式
+		$('span.n_date').css('float','right;');															//消息標題日期向右對齊
 	}
 //>>>>>	//【手機版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是手機版
-		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');						//(同加入會員)加背景
-		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');	//(同加入會員)邊框隱藏
-		$('#main_div .p_c3b').css('background','url()');									//(同加入會員)內容區塊去背景
-		$('.n_tb').css({'background-color':'#e8f6ff','margin-top':'18px'});							//消息標題樣式
-		$('.n_title>a').css({'text-decoration':'none','color':'#000'});								//消息標題樣式
+	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){														//如果是手機版
+		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');										//(同加入會員)加背景
+		$('#main_div .p_c1b,#main_div .p_c2b,#main_div .p_c4b,#main_div .p_c5b,#main_div .p_c6b').css('display','none');					//(同加入會員)邊框隱藏
+		$('#main_div .p_c3b').css('background','url()');													//(同加入會員)內容區塊去背景
+		$('.n_tb').css({'background-color':'#e8f6ff','margin-top':'18px'});											//消息標題樣式
+		$('.n_title>a').css({'text-decoration':'none','color':'#000'});												//消息標題樣式
 	}
 }
