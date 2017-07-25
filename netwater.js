@@ -560,10 +560,11 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 		$('.right_td .p_c1,.right_td .p_c2,.right_td .p_c4,.right_td .p_c5,.right_td .p_c6').css('display','none');		//網站圖邊框隱藏
 		$('.right_td .p_c3').css('background','url()');										//網站圖邊框隱藏
 		$('.n_title').css('padding','0');											//消息標題樣式
-		$('.news_cont>tbody>tr>td:nth-of-type(1)').css('display','none');
+
 		setTimeout(function(){
 /**？*/			$('.n_title>a').css({'text-decoration':'none !important','color':'rgb(41,119,210) !important'});	//消息標題樣式 (一直不成功，為什麼？)
-		},1000);
+			$('.news_cont>tbody>tr>td:nth-of-type(1)').css('display','none');
+		},3000);
 	}
 //>>>>>	//【手機版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){										//如果是手機版
