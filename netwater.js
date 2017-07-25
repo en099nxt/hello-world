@@ -594,6 +594,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 //【消息頁消息各頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href.substring(0,37)=='http://netwater.shop2000.com.tw/news/' || document.location.href.substring(0,77)=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/news/'){
 //>>>>>	//【通用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+/*
 	$('.n_title').ready(function(){
 		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');							//(同加入會員)加背景
 		$('.p_c1b,.p_c2b,.p_c4b,.p_c5b,.p_c6b').css('display','none');									//邊框隱藏
@@ -611,4 +612,5 @@ if(document.location.href.substring(0,37)=='http://netwater.shop2000.com.tw/news
 			$('.percent100>table>tbody>tr>td:nth-of-type(2)>div').html('<marquee loop=0 behavior=slide>晉歡淨水 Jin Huan Water</marquee>');
 		});
 	});
+*/
 }
