@@ -565,7 +565,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 	$('.pt9>input').attr('id','act1');																//輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
 	$('.pt9>input').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});					//輸入欄位樣式補充
 	$('.pt9>input:nth-of-type(1)').css('margin-right','3px');													//輸入欄位與按鈕之間空格
-	$('.imgr8').css({'border-radius':'0px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});						//圖片樣式
+	$('.imgr8').css({'border-radius':'0px','box-shadow':'0 13px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});						//圖片樣式
 //>>>>>	//【電腦版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){														//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');					//(同加入會員)邊框隱藏
