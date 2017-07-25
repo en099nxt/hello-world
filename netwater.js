@@ -382,7 +382,7 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 					}
 				});
 			//});
-			},300);
+			},100);
 			/*$('.imgs_r').ready(function(){
 				$('.imgs_r').each(function(){
 					console.log($(this));
