@@ -569,7 +569,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 //});
 		//$('form[name="form1"]').ready(function(){
 /**？*/			$('td.n_title>a').css({'text-decoration':'none','color':'rgb(41,119,210)','font-family':'新細明體','text-shadow':'1px 1px #fff','font-size':'20px'});	//消息標題樣式 (一直不成功，為什麼？)
-			$('span.n_date::before').css('content','.......');
+			$('span.n_date').css('float','right;');
 		//});
 	}
 //>>>>>	//【手機版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
