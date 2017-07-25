@@ -563,7 +563,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 
 		setTimeout(function(){
 /**？*/			$('.n_title>a').css({'text-decoration':'none !important','color':'rgb(41,119,210) !important'});	//消息標題樣式 (一直不成功，為什麼？)
-			$('.news_cont>tbody>tr>td:nth-of-type(1)').css('display','none');
+			$('.news_cont').css('display','none');
 		},3000);
 	}
 //>>>>>	//【手機版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
