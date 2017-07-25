@@ -562,6 +562,9 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 		$('.n_title').css('padding','0');											//消息標題樣式
 //$('form[name="form1"]').ready(function(){
 	$('table.news_cont>tbody>tr>td:nth-of-type(1)').css('display','none');
+		
+$('table.news_cont>tbody>tr>td:nth-of-type(2)').css('box-shadow','0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)')
+
 //});
 		setTimeout(function(){
 /**？*/			$('td.n_title>a:hover').css({'text-decoration':'none','color':'rgb(41,119,210)'});	//消息標題樣式 (一直不成功，為什麼？)
