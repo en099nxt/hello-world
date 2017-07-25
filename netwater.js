@@ -371,10 +371,10 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#previous_p').css({'font-size':'17px','color':'#5984ca'});
 			$('#next_p').css({'font-size':'17px','color':'#5984ca'});
 			setTimeout(function(){
-				//if($('img.imgs_r').css('height').substring(0,3)>240){
+				if($('img.imgs_r').css('height').substring(0,3)>240){
 					$('img.imgs_r').css('height','240px');
-					console.log($('img.imgs_r').css('height').substring(0,3));
-				//}
+					//console.log($('img.imgs_r').css('height').substring(0,3));
+				}
 			},3000);
 			/*$('.imgs_r').ready(function(){
 				$('.imgs_r').each(function(){
