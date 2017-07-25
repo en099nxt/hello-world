@@ -371,8 +371,8 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#previous_p').css({'font-size':'17px','color':'#5984ca'});
 			$('#next_p').css({'font-size':'17px','color':'#5984ca'});
 			$('.imgs_r').ready(function(){
-				console.log($('.imgs_r').css('height'));
 				$('.imgs_r').each(function(){
+					console.log($(this).css('height'));
 					
 					if($(this).css('height').substring(0,3)>240){
 						$(this).css({'height':'240px','width':'auto'});
