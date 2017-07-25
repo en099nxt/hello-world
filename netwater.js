@@ -372,7 +372,9 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#next_p').css({'font-size':'17px','color':'#5984ca'});
 		});
 		$('.imgs_r').each(function(){
-			$(this).css('height').substring(0,3)>240?$(this).css({'height':'240px','width':'auto'}):;
+			if($(this).css('height').substring(0,3)>240){
+				$(this).css({'height':'240px','width':'auto'})
+			}
 		});
 
 		//電腦版網頁最底部資訊
