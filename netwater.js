@@ -468,6 +468,13 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 		$('.p_c3>a>img').css('margin-right','20px');															//網站圖再左移
 		$('.wl_box>ul>div>a').css('font-style','italic');														//網址斜體
 		$('.wl_box').css('margin-bottom','30px');															//各連結高度分開一點
+$('.wl_box>ul>li>a').hover(function(){
+	$(this).css('font-weight','bold');
+},function(){
+	$(this).css('font-weight','normal');
+});
+	
+	
 	}
 //>>>>>	//【手機版專用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){															//如果是手機版
@@ -538,6 +545,13 @@ if(document.location.href=='http://netwater.shop2000.com.tw/faq' || document.loc
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){												//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');			//(同加入會員)邊框隱藏
 		$('.right_td .p_c3b').css('background','url()');											//(同加入會員)內容區塊去背景
+$('.faq_box>ul>li').hover(function(){
+	$(this).css('font-weight','bold');
+},function(){
+	$(this).css('font-weight','normal');
+});
+	
+	
 	}
 //>>>>>	//【手機版專用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){												//如果是手機版
