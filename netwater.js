@@ -567,6 +567,8 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 		$('td.n_title>a').css({'text-decoration':'none','color':'rgb(41,119,210)','font-family':'新細明體','text-shadow':'1px 1px #fff','font-size':'20px'});	//消息標題樣式
 $('td.n_title>a').hover(function(){
 	$(this).css('text-decoration','underline');
+},function(){
+	$(this).css('text-decoration','none');
 });
 		$('span.n_date').css('float','right');															//消息標題日期向右對齊
 	}
