@@ -544,9 +544,9 @@ if(document.location.href=='http://netwater.shop2000.com.tw/faq' || document.loc
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');			//(同加入會員)邊框隱藏
 		$('.right_td .p_c3b').css('background','url()');											//(同加入會員)內容區塊去背景
 		$('.faq_title>ul>li>a').hover(function(){												//滑鼠指到標題會變粗體
-			$(this).css('font-weight','bold');
+			$(this).css('text-decoration','underline');
 		},function(){
-			$(this).css('font-weight','normal');
+			$(this).css('text-decoration','none');
 		});
 	}
 //>>>>>	//【手機版專用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
