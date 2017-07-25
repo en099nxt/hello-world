@@ -591,3 +591,6 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 		$('.n_title>a').css({'text-decoration':'none','color':'#000'});												//消息標題樣式
 	}
 }
+if(document.location.href.match(/^http:\/\/netwater\.shop2000\.com\.tw\/news\/\d+$/).length || document.location.href.match(/^http:\/\/www\.shop2000\.com\.tw\/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater\/news\/\d+$/).length){
+alert('X');
+}
