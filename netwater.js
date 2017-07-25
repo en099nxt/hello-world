@@ -467,14 +467,12 @@ if(document.location.href=='http://netwater.shop2000.com.tw/weblink' || document
 		$('.right_td .p_c3').css('background','url()');															//網站圖邊框隱藏
 		$('.p_c3>a>img').css('margin-right','20px');															//網站圖再左移
 		$('.wl_box>ul>div>a').css('font-style','italic');														//網址斜體
+		$('.wl_box>ul>li>a').hover(function(){																//滑鼠指到標題會變粗體
+			$(this).css('font-weight','bold');
+		},function(){
+			$(this).css('font-weight','normal');
+		});
 		$('.wl_box').css('margin-bottom','30px');															//各連結高度分開一點
-$('.wl_box>ul>li>a').hover(function(){
-	$(this).css('font-weight','bold');
-},function(){
-	$(this).css('font-weight','normal');
-});
-	
-	
 	}
 //>>>>>	//【手機版專用】of【相關連結頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){															//如果是手機版
@@ -535,9 +533,9 @@ else if(document.location.href=='http://netwater.shop2000.com.tw/message/addmsg'
 if(document.location.href=='http://netwater.shop2000.com.tw/faq' || document.location.href=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/faq'){
 //>>>>>	//【通用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	$('.faq_box,.faq_title').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)','background':'#fff','padding':'20px'});	//各題區塊樣式
-	$('.faq_box li').css('list-style-image','url(http://61.63.55.131/pattern/39254/1.gif)');							//各題標題圖示(最上層區塊)
-	$('.faq_title li').css('list-style-image','url(http://61.63.55.131/pattern/39236/1.gif)');							//各題標題圖示(各筆區塊)
-	$('.faq_box>ul>li,.faq_title>ul>li>a').css({'color':'#2977d2','text-decoration':'none'});							//各題標題樣式
+	$('.faq_title li').css('list-style-image','url(http://61.63.55.131/pattern/39236/1.gif)');							//各題標題圖示(最上層區塊)
+	$('.faq_box li').css('list-style-image','url(http://61.63.55.131/pattern/39254/1.gif)');							//各題標題圖示(各筆區塊)
+	$('.faq_title>ul>li>a,.faq_box>ul>li').css({'color':'#2977d2','text-decoration':'none'});							//各題標題樣式
 	$('.faq_box>ul').css('margin-top','7px');													//各題提高度縮小
 	$('.to_top>a').css('text-decoration','none');													//各題右下角回到最上頁文字樣式
 	$('.to_top').css('margin-top','20px');														//各題右下角回到最上頁文字下移
@@ -545,13 +543,11 @@ if(document.location.href=='http://netwater.shop2000.com.tw/faq' || document.loc
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){												//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');			//(同加入會員)邊框隱藏
 		$('.right_td .p_c3b').css('background','url()');											//(同加入會員)內容區塊去背景
-$('.faq_box>ul>li').hover(function(){
-	$(this).css('font-weight','bold');
-},function(){
-	$(this).css('font-weight','normal');
-});
-	
-	
+		$('.faq_title>ul>li>a').hover(function(){												//滑鼠指到標題會變粗體
+			$(this).css('font-weight','bold');
+		},function(){
+			$(this).css('font-weight','normal');
+		});
 	}
 //>>>>>	//【手機版專用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else if(__Mobile_Style_NW__ && !__Product_Page_NW__){												//如果是手機版
@@ -579,11 +575,11 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 		$('table.news_cont>tbody>tr>td:nth-of-type(1)').css('display','none');											//消息圖置中
 		$('.n_title').css('padding','0');															//消息標題樣式
 		$('td.n_title>a').css({'text-decoration':'none','color':'rgb(41,119,210)','font-family':'新細明體','text-shadow':'1px 1px #fff','font-size':'20px'});	//消息標題樣式
-$('td.n_title>a').hover(function(){
-	$(this).css('text-decoration','underline');
-},function(){
-	$(this).css('text-decoration','none');
-});
+		$('td.n_title>a').hover(function(){															//滑鼠指到標題會加底線
+			$(this).css('text-decoration','underline');
+		},function(){
+			$(this).css('text-decoration','none');
+		});
 		$('span.n_date').css('float','right');															//消息標題日期向右對齊
 	}
 //>>>>>	//【手機版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
