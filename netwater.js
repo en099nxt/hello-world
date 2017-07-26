@@ -370,29 +370,14 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#no_c').parent().css({'font-size':'17px','color':'#5984ca'});
 			$('#previous_p').css({'font-size':'17px','color':'#5984ca'});
 			$('#next_p').css({'font-size':'17px','color':'#5984ca'});
-			setTimeout(function(){
-			//$('img.imgs_r').parent().ready(function(){
-				//if($('img.imgs_r').css('height').substring(0,3)>240){
-					//$('img.imgs_r').css({'height':'240px','width':'auto'});
-					//console.log($('img.imgs_r').css('height').substring(0,3));
-				//}
-				$('img.imgs_r').each(function(){
-					if($(this).css('height').substring(0,3)>240){
-						$(this).css({'height':'240px','width':'auto'});
-					}
-				});
-			//});
-			},100);
-			/*$('.imgs_r').ready(function(){
-				$('.imgs_r').each(function(){
-					console.log($(this));
-					
-					if($(this).css('height').substring(0,3)>240){
-						$(this).css({'height':'240px','width':'auto'});
-					}
-				});
-			});*/
 		});
+		setTimeout(function(){												//縮圖過長自動調整比例
+			$('img.imgs_r').each(function(){
+				if($(this).css('height').substring(0,3)>240){
+					$(this).css({'height':'240px','width':'auto'});
+				}
+			});
+		},100);
 
 		//電腦版網頁最底部資訊
 		$('#homebt').ready(function(){
@@ -587,7 +572,7 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 	$('.pt9>input').attr('id','act1');																//輸入欄位與按鈕透過掛上加入會員頁才有的 #act1 來套用樣式
 	$('.pt9>input').css({'background-color':'rgb(232,245,255)','border':'solid 1px rgb(169, 169, 169)','font-size':'16px'});					//輸入欄位樣式補充
 	$('.pt9>input:nth-of-type(1)').css('margin-right','3px');													//輸入欄位與按鈕之間空格
-	$('.imgr8').css({'border-radius':'0px','box-shadow':'0 13px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});						//圖片樣式
+	$('.imgr8').css({'border-radius':'0px','box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)'});						//圖片樣式
 //>>>>>	//【電腦版專用】of【消息頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(!__Mobile_Style_NW__ && !__Product_Page_NW__){														//如果是電腦版
 		$('.right_td .p_c1b,.right_td .p_c2b,.right_td .p_c4b,.right_td .p_c5b,.right_td .p_c6b').css('display','none');					//(同加入會員)邊框隱藏
@@ -616,7 +601,6 @@ if(document.location.href=='http://netwater.shop2000.com.tw/news' || document.lo
 //【消息頁消息各頁專用】/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(document.location.href.substring(0,37)=='http://netwater.shop2000.com.tw/news/' || document.location.href.substring(0,77)=='http://www.shop2000.com.tw/%E6%B7%A8%E6%B0%B4%E5%AF%A6%E6%A5%ADnetwater/news/'){
 //>>>>>	//【通用】of【FAQ頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-/*
 	$('.n_title').ready(function(){
 		$('#main_div').css('background','url(http://61.63.55.131/pattern/737/1.gif)');							//(同加入會員)加背景
 		$('.p_c1b,.p_c2b,.p_c4b,.p_c5b,.p_c6b').css('display','none');									//邊框隱藏
@@ -634,5 +618,4 @@ if(document.location.href.substring(0,37)=='http://netwater.shop2000.com.tw/news
 			$('.percent100>table>tbody>tr>td:nth-of-type(2)>div').html('<marquee loop=0 behavior=slide>晉歡淨水 Jin Huan Water</marquee>');
 		});
 	});
-*/
 }
