@@ -370,14 +370,16 @@ if(!__Product_Page_NW__){													//如果不是商品頁
 			$('#no_c').parent().css({'font-size':'17px','color':'#5984ca'});
 			$('#previous_p').css({'font-size':'17px','color':'#5984ca'});
 			$('#next_p').css({'font-size':'17px','color':'#5984ca'});
+
+			//縮圖過長自動調整比例
+			setTimeout(function(){
+				$('img.imgs_r').each(function(){
+					if($(this).css('height').substring(0,3)>240){
+						$(this).css({'height':'240px','width':'auto'});
+					}
+				});
+			},100);
 		});
-		setTimeout(function(){												//縮圖過長自動調整比例
-			$('img.imgs_r').each(function(){
-				if($(this).css('height').substring(0,3)>240){
-					$(this).css({'height':'240px','width':'auto'});
-				}
-			});
-		},100);
 
 		//電腦版網頁最底部資訊
 		$('#homebt').ready(function(){
