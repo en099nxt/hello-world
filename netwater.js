@@ -609,7 +609,7 @@ if(document.location.href.substring(0,37)=='http://netwater.shop2000.com.tw/news
 		$('.p_c3b').css('background','url()');												//內容區塊去背
 		$('.n_title>div').css({'color':'rgb(41,119,210)','font-family':'新細明體','text-shadow':'1px 1px #fff','font-size':'20px'});	//消息標題樣式
 		$('.n_title').css('padding','0');												//消息標題樣式
-		$('.p_c3b>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)','max-width':'100%'});		//消息圖樣式
+		$('.p_c3b>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)','max-width':'96%'});		//消息圖樣式
 
 		//手機版商品頁橫幅、網站名稱(同手機版專用 of 商品頁專用)
 		$('.percent100>table>tbody>tr>td:nth-of-type(2)').ready(function(){
