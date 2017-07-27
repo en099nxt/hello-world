@@ -70,12 +70,12 @@ if(__Product_Page_NW__){																		//如果是商品頁
 //>>>>>	//【手機版專用】of【商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	if(__Mobile_Style_NW__){																	//如果是手機版
 		//手機版商品頁橫幅、網站名稱(跟首頁的樣式並不完全一樣)
-		$('.percent100>table>tbody>tr>td:nth-of-type(2)').ready(function(){
-			$('.percent100>table>tbody>tr>td:nth-of-type(1)>img').attr('src','http://61.63.55.134/29956/self/j20170704113027.jpg');
-			$('.percent100>table>tbody>tr>td:nth-of-type(1)>img').css('padding-top','4px');
-			$('.percent100>table>tbody>tr>td:nth-of-type(2)').css({'background':'#e8f5ff','border-bottom':'1px solid #fff'});
-			$('.percent100>table>tbody>tr>td:nth-of-type(2)>div').css({'color':'#000','text-shadow':'rgb(255, 255, 255) 2px 2px 0px','width':'','padding-top':'9px'});
-			$('.percent100>table>tbody>tr>td:nth-of-type(2)>div').html('<marquee loop=0 behavior=slide>晉歡淨水 Jin Huan Water</marquee>');
+		$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(2)').ready(function(){
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(1)>img').attr('src','http://61.63.55.134/29956/self/j20170704113027.jpg');
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(1)>img').css('padding-top','4px');
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(2)').css({'background':'#e8f5ff','border-bottom':'1px solid #fff'});
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(2)>div').css({'color':'#000','text-shadow':'rgb(255, 255, 255) 2px 2px 0px','width':'','padding-top':'9px'});
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(2)>div').html('<marquee loop=0 behavior=slide>晉歡淨水 Jin Huan Water</marquee>');
 		});
 
 		//手機版商品頁商品名稱
@@ -612,12 +612,12 @@ if(document.location.href.substring(0,37)=='http://netwater.shop2000.com.tw/news
 		$('.p_c3b>img').css({'box-shadow':'0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)','max-width':'96%'});		//消息圖樣式
 
 		//手機版商品頁橫幅、網站名稱(同手機版專用 of 商品頁專用)
-		$('.percent100>table>tbody>tr>td:nth-of-type(2)').ready(function(){
-			$('.percent100>table>tbody>tr>td:nth-of-type(1)>img').attr('src','http://61.63.55.134/29956/self/j20170704113027.jpg');
-			$('.percent100>table>tbody>tr>td:nth-of-type(1)>img').css('padding-top','4px');
-			$('.percent100>table>tbody>tr>td:nth-of-type(2)').css({'background':'#e8f5ff','border-bottom':'1px solid #fff'});
-			$('.percent100>table>tbody>tr>td:nth-of-type(2)>div').css({'color':'#000','text-shadow':'rgb(255, 255, 255) 2px 2px 0px','width':'','padding-top':'9px'});
-			$('.percent100>table>tbody>tr>td:nth-of-type(2)>div').html('<marquee loop=0 behavior=slide>晉歡淨水 Jin Huan Water</marquee>');
+		$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(2)').ready(function(){
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(1)>img').attr('src','http://61.63.55.134/29956/self/j20170704113027.jpg');
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(1)>img').css('padding-top','4px');
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(2)').css({'background':'#e8f5ff','border-bottom':'1px solid #fff'});
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(2)>div').css({'color':'#000','text-shadow':'rgb(255, 255, 255) 2px 2px 0px','width':'','padding-top':'9px'});
+			$('.percent100:nth-of-type(1)>table>tbody>tr>td:nth-of-type(2)>div').html('<marquee loop=0 behavior=slide>晉歡淨水 Jin Huan Water</marquee>');
 		});
 	});
 }
