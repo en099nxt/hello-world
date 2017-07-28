@@ -168,6 +168,9 @@ $('.buy').click(function(){
 	$('#buy_finish_div>div>img').css('display','none');			//去掉右上角叉叉按鈕
 	$('#pcar').css('top','50px');					//已放入購物車方框下移不要重疊到回商品列表按鈕
 });
+$('#pcar').ready(function(){
+	$('#pcar').css('top','50px');
+});
 	}
 }
 
