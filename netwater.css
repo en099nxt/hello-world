@@ -14,7 +14,8 @@ a{
 .san_pin_yie_lio_yien_suon_tsu_btn,				/* 商品頁電腦版確定送出留言按鈕 */
 #back1,								/* 商品頁右上角回商品列表按鈕 */
 #shbt,								/* 桌面版左邊商品分類選單最上方搜尋欄位隱藏的搜尋按鈕 */
-#act1,#buy_finish_div input{								/* 加入會員頁加入會員按鈕 */
+#act1,								/* 加入會員頁加入會員按鈕 */
+#buy_finish_div input{						/* 電腦版商品頁按下訂購的已加入購物車框樣式 */
 	background-color:#e8f5ff;
 	margin:0 0 0 0;
 	border:solid 1px #87b7dc;				/* 寬度改成零才設下面的陰影(考慮 #bbd4e6) */
@@ -127,7 +128,3 @@ a{
 	background:#fff;
 	border:solid 0px #000;
 }
-/*
-#pcar{	 已放入購物車 
-	top:50px;
-}*/
