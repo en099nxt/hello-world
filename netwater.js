@@ -144,7 +144,7 @@ if(__Product_Page_NW__){																		//如果是商品頁
 				$('#buy_finish_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
 				$('#buy_finish_div input').css({'font-size':'20px','width':'auto'});										//按鈕樣式，其他樣式已在 CSS 設定
 				$('#buy_finish_div>div>img').css('display','none');												//去掉右上角叉叉按鈕
-			},50);
+			},80);
 		});
 		$('#pcar').ready(function(){
 			$('#pcar').css('top','50px');															//已放入購物車方框下移不要重疊到回商品列表按鈕
