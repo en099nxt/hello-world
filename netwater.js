@@ -14,15 +14,15 @@ if(__Product_Page_NW__){																		//如果是商品頁
 					'productId':PId
 				},
 				function(data){
+					data+="<br><br>";
+					data+="<center>";
+					data+="<span style='color:#0171d1; font-size:19px;'>全系列濾材皆經國際認證及濾芯外殼經ＳＧＳ台灣檢驗ＦＤＡ無毒認證</span><br>";
+					data+="<img width=0 class=san_pin_ren_zhen_1 src=http://61.63.55.134/29956/self/j20170526111811.jpg><br>";
+					data+="<img width=0 class=san_pin_ren_zhen_2 src=http://61.63.55.134/29956/self/j20170526114226.jpg><br>";
 					if(PClass=='主機'){
-						data+="<br><br>";
-						data+="<center>";
-						data+="<span style='color:#0171d1; font-size:19px;'>全系列濾材皆經國際認證及濾芯外殼經ＳＧＳ台灣檢驗ＦＤＡ無毒認證</span><br>";
-						data+="<img width=0 class=san_pin_ren_zhen_1 src=http://61.63.55.134/29956/self/j20170526111811.jpg><br>";
-						data+="<img width=0 class=san_pin_ren_zhen_2 src=http://61.63.55.134/29956/self/j20170526114226.jpg><br>";
 						data+="<img width=0 class=san_pin_bau_ku_fu_wu src=http://61.63.55.134/29956/self/j20170526154533.jpg>";
-						data+="</center>";
 					}
+					data+="</center>";
 					$('#netwaterShowProductDetail').fadeOut(200,function(){
 						$("#netwaterShowProductDetail").html(data).fadeIn();
 					});
