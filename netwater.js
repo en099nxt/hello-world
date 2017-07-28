@@ -37,24 +37,24 @@ if(__Product_Page_NW__){																		//如果是商品頁
 		$('.p_tiem>span').css('color','#2977d2');
 	});
 
-	//購買數量選單
+	//商品頁購買數量選單
 	$('#buyct').ready(function(){																	//選單樣式
 		$('#buyct').parent().css('font-size','20px');
 		$('#buyct').css({'font-size':'22px','background-color':'#e8f5ff','width':'76px'});
 	});
-	$('#ct_div').ready(function(){																	//自行輸入數量框樣式
+	$('#ct_div').ready(function(){																	//自行輸入購買數量框樣式
 		$('#keyin_val').focus(function(){															//手機版的無法偵測到選擇選項時觸發選單整體被按到的事件，所以改為偵測欄位出現後成為焦點時
 			$('#ct_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
 			$('#ct_div>div>img').css('display','none');													//去掉右上角叉叉按鈕
 		});
 	});
 
-	//訂購按鈕樣式(大概是載入比較慢所以 CSS 設定不到)
+	//商品頁訂購按鈕樣式(大概是載入比較慢所以 CSS 設定不到)
 	$('.buy').ready(function(){
 		$('.buy').css({'background-color':'#e8f5ff','font-size':'20px','border':'solid 1px #87b7dc','margin':'0 0 0 0','border-radius':'4px','font-family':'新細明體','width':'60px','height':'30px','line-height':'30px'});
 	});
 
-	//商品認證與服務顯示動畫
+	//商品頁商品認證與服務顯示動畫
 	$(window).scroll(function(){
 		$('.san_pin_ren_zhen_1').ready(function(){
 			if($('.san_pin_ren_zhen_1').css('width')=='0px' && $(window).scrollTop() >= $('.san_pin_ren_zhen_1').offset().top-$(window).height()*0.9){
@@ -86,7 +86,7 @@ if(__Product_Page_NW__){																		//如果是商品頁
 			$('#main_div>div:nth-of-type(2)').html(	$('#main_div>div:nth-of-type(2)').html().replace(/\^2$/g,'<sup>2</sup>')	);
 		});
 
-		//手機版放大縮回圖片按鈕顏色
+		//手機版商品頁放大縮回圖片按鈕顏色
 		$('#main_div>div:nth-of-type(5)>span').ready(function(){												//點此放大圖片按鈕
 			$('#main_div>div:nth-of-type(5)>span').css('color','#2977d2');
 		});
@@ -99,7 +99,7 @@ if(__Product_Page_NW__){																		//如果是商品頁
 			$('div#main_div>div:nth-of-type(11)>div:nth-of-type(1)').css({'background-color':'#e8f5ff','font-size':'13px','border':'solid 1px #87b7dc','font-family':'新細明體'});
 		});
 
-		//手機版購買數量選單不要太擠
+		//手機版商品頁購買數量選單不要太擠
 		$('#buyct').ready(function(){
 			$('#buyct').parent().css('font-size','18px');
 			$('#buyct').css({'font-size':'28px','margin-bottom':'18px','margin-top':'18px'});
@@ -113,14 +113,14 @@ if(__Product_Page_NW__){																		//如果是商品頁
 			$('.table_msg>tbody>tr:nth-of-type(5)>td>input:nth-of-type(2)').attr('value','確定送出留言');
 		});
 
-		//手機版底部改選電腦版的按鈕改顏色
+		//手機版商品頁底部改選電腦版的按鈕改顏色
 		$('#main_div>div:nth-last-of-type(3)>span:nth-child(1)').ready(function(){
 			$('#main_div>div:nth-last-of-type(3)>span:nth-child(1)').css('color','#2977d2');
 		});
 	}
 //>>>>>	//【電腦版專用】of【商品頁專用】---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	else{																				//如果是電腦版
-		//電腦版商品頁第一塊改背景與邊框
+		//電腦版商品頁第一區塊改背景與邊框
 		$('body>div:nth-of-type(2)').ready(function(){
 			$('body>div:nth-of-type(2)').css({'background':'url(http://61.63.55.134/29956/self/j20170526153349.jpg) center bottom no-repeat','box-shadow':'0 3px 17px -4px rgba(20%,20%,40%,0.5)','border-radius':'0'});
 		});
@@ -133,17 +133,29 @@ if(__Product_Page_NW__){																		//如果是商品頁
 			$('#product_name').html(	$('#product_name').html().replace(/\^2$/g,'<sup>2</sup>')	);
 		});
 
-		//電腦版商品頁第一塊加入到收藏匣按鈕
+		//電腦版商品頁第一區塊加入到收藏匣按鈕
 		$('body>div:nth-of-type(2)>table:nth-of-type(1)>tbody>tr>td:nth-of-type(1)>div').ready(function(){
 			$('body>div:nth-of-type(2)>table:nth-of-type(1)>tbody>tr>td:nth-of-type(1)>div').css({'background-color':'#e8f5ff','font-size':'13px','border':'solid 1px #87b7dc','font-family':'新細明體'});
 		});
 
-		//電腦版第一區塊右下角網址移除
+		//電腦版商品頁按下訂購按鈕後的已加入購物車框樣式
+		$('.buy').click(function(){
+			setTimeout(function(){
+				$('#buy_finish_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
+				$('#buy_finish_div input').css({'font-size':'20px','width':'auto'});										//按鈕樣式，其他樣式已在 CSS 設定
+				$('#buy_finish_div>div>img').css('display','none');												//去掉右上角叉叉按鈕
+			},100);
+		});
+		$('#pcar').ready(function(){
+			$('#pcar').css('top','50px');															//已放入購物車方框下移不要重疊到回商品列表按鈕
+		});
+
+		//電腦版商品頁第一區塊右下角網址移除
 		$('body>div:nth-of-type(2)>table:nth-of-type(2) div').ready(function(){
 			$('body>div:nth-of-type(2)>table:nth-of-type(2) div').css('display','none');
 		});
 
-		//電腦版第二區塊去邊框
+		//電腦版商品頁第二區塊去邊框
 		$('body>div:nth-of-type(3)').ready(function(){
 			$('body>div:nth-of-type(3)').css('box-shadow','');
 		});
@@ -157,23 +169,10 @@ if(__Product_Page_NW__){																		//如果是商品頁
 			$('body>div:nth-of-type(5)>div:nth-of-type(2)>form>input:nth-of-type(5)').attr('value','確定送出留言');
 		});
 
-		//電腦版底部改選手機版的按鈕改顏色
+		//電腦版商品頁底部改選手機版的按鈕改顏色
 		$('body>div:nth-last-of-type(2)>span:nth-child(2)').ready(function(){
 			$('body>div:nth-last-of-type(2)>span:nth-child(2)').css('color','#2977d2');
 		});
-		
-//電腦版按下訂購按鈕後的樣式
-$('.buy').click(function(){
-setTimeout(function(){
-	$('#buy_finish_div').css({'border-radius':'44px','box-shadow':'0 0 8px 0 rgba(255,255,255,0.9)','border':'solid 1px #82a6d2','background':'url(http://61.63.55.131/pattern/737/1.gif)'});
-	$('#buy_finish_div input').css({'font-size':'20px','width':'auto'});	//按鈕樣式，其他樣式已在 CSS 設定
-	$('#buy_finish_div>div>img').css('display','none');			//去掉右上角叉叉按鈕
-	$('#pcar').css('top','50px');						//已放入購物車方框下移不要重疊到回商品列表按鈕
-},100);
-});
-$('#pcar').ready(function(){
-	$('#pcar').css('top','50px');						//已放入購物車方框下移不要重疊到回商品列表按鈕
-});
 	}
 }
 
