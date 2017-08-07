@@ -161,12 +161,12 @@ if(__Product_Page_NW__){																		//如果是商品頁
 		});
 
 		//電腦版商品頁留言板
-		$('body>div:nth-of-type(5)').ready(function(){														//表格改邊框
-			$('body>div:nth-of-type(5)').css({'box-shadow':'0 0 17px -4px rgba(20%,20%,40%,0.5)','border-radius':'0'});
+		$('body>div:nth-last-of-type(5)').ready(function(){														//表格改邊框
+			$('body>div:nth-last-of-type(5)').css({'box-shadow':'0 0 17px -4px rgba(20%,20%,40%,0.5)','border-radius':'0'});
 		});
-		$('body>div:nth-of-type(5)>div:nth-of-type(2)>form>input:nth-of-type(5)').ready(function(){								//送出按鈕(大多樣式已設定在 CSS)
-			$('body>div:nth-of-type(5)>div:nth-of-type(2)>form>input:nth-of-type(5)').addClass('san_pin_yie_lio_yien_suon_tsu_btn');
-			$('body>div:nth-of-type(5)>div:nth-of-type(2)>form>input:nth-of-type(5)').attr('value','確定送出留言');
+		$('body>div:nth-last-of-type(5)>div:nth-of-type(2)>form>input:nth-of-type(5)').ready(function(){								//送出按鈕(大多樣式已設定在 CSS)
+			$('body>div:nth-last-of-type(5)>div:nth-of-type(2)>form>input:nth-of-type(5)').addClass('san_pin_yie_lio_yien_suon_tsu_btn');
+			$('body>div:nth-last-of-type(5)>div:nth-of-type(2)>form>input:nth-of-type(5)').attr('value','確定送出留言');
 		});
 
 		//電腦版商品頁底部改選手機版的按鈕改顏色
